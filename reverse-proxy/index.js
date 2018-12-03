@@ -28,8 +28,6 @@ const fetchData = (addr, relPath, options, res) => {
       else {
         if (relPath.includes("students")) {
           const keys = await redisClient.matchKeys("/students*");
-          console.log("KEYS HERE>>>>\n\n\n\n");
-          console.log(keys);
           if (keys.length > 0) await redisClient.deleteKey(keys);
         }
         await redisClient.deleteKey(`/${relPath}`);
@@ -40,7 +38,6 @@ const fetchData = (addr, relPath, options, res) => {
 };
 
 const logger = (req, node) => {
-  //  console.log(node);
   console.log(
     `${req.headers.host}${req.url} proxy to ${node.proxy_to[node.lbCounter]}`
   );
@@ -51,8 +48,6 @@ const setRoute = (node, sliceIndex = 2) => {
   app.all(`${node.url}*`, async (req, res, next) => {
     const path = getRelPath(req.originalUrl, sliceIndex);
     logger(req, node);
-    console.log(node.proxy_to[node.lbCounter]);
-    console.log(node.lbCounter);
     const options = {
       method: req.method
     };
@@ -64,7 +59,6 @@ const setRoute = (node, sliceIndex = 2) => {
     if (options.method === "GET") {
       const cacheData = await redisClient.checkForKey(`/${path}`);
       if (cacheData) {
-        console.log("GETTING DATA FROM CACHE!!");
         return res.send(cacheData);
       }
     }
@@ -85,7 +79,6 @@ const routeBuilder = location => {
       root = el;
       return;
     }
-    // setRoute(el);
   });
   if (root) setRoute(root, 1);
 };
