@@ -1,0 +1,17 @@
+<tr>
+  <td><%=locals.student.firstName%></td>
+  <td><%=locals.student.lastName%></td>
+  <td><%=locals.student.tel%></td>
+  <td><%= locals.student.age%></td>
+  <td><%= locals.student.department.name%></td>
+  <td>
+    <a id="<%=locals.student._id%>" href="#" class="open-edit-company tooltipped" data-position="top"
+      data-delay="50" data-tooltip="Editare companie">
+      <i class="material-icons teal-text">mode_edit</i>
+    </a>
+    <a id="<%=locals.student._id%>" href="#" class="delete-company tooltipped" data-position="top"
+      data-delay="50" data-tooltip="Șterge companie">
+      <i class="material-icons teal-text">delete</i>
+    </a>
+  </td>
+</tr>

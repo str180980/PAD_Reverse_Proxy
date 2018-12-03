@@ -1,0 +1,14 @@
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] MongoDB starting : pid=17911 port=27017 dbpath=rs1 64-bit host=staverPC
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] db version v3.6.8
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] modules: none
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] build environment:
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] options: { net: { port: 27017 }, replication: { replSet: "padRepl" }, storage: { dbPath: "rs1" }, systemLog: { destination: "file", path: "rs1.log" } }
+2018-11-24T22:36:30.144+0200 E STORAGE  [initandlisten] Failed to set up listener: SocketException: Address already in use
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] now exiting
+2018-11-24T22:36:30.144+0200 I CONTROL  [initandlisten] shutting down with code:48

@@ -1,0 +1,288 @@
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] MongoDB starting : pid=7535 port=27019 dbpath=rs3 64-bit host=staverPC
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] db version v3.6.8
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] modules: none
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] build environment:
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-25T17:12:35.679+0200 I CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { replSet: "padRepl" }, storage: { dbPath: "rs3" }, systemLog: { destination: "file", path: "rs3.log" } }
+2018-11-25T17:12:35.680+0200 I -        [initandlisten] Detected data files in rs3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-11-25T17:12:35.680+0200 I STORAGE  [initandlisten] 
+2018-11-25T17:12:35.680+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-11-25T17:12:35.680+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-11-25T17:12:35.680+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3376M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-11-25T17:12:36.666+0200 I STORAGE  [initandlisten] WiredTiger message [1543158756:666624][7535:0x7f7613a889c0], txn-recover: Main recovery loop: starting at 1/161920
+2018-11-25T17:12:36.979+0200 I STORAGE  [initandlisten] WiredTiger message [1543158756:979776][7535:0x7f7613a889c0], txn-recover: Recovering log 1 through 2
+2018-11-25T17:12:37.092+0200 I STORAGE  [initandlisten] WiredTiger message [1543158757:92415][7535:0x7f7613a889c0], txn-recover: Recovering log 2 through 2
+2018-11-25T17:12:37.133+0200 I STORAGE  [initandlisten] WiredTiger message [1543158757:133381][7535:0x7f7613a889c0], txn-recover: Set global recovery timestamp: 0
+2018-11-25T17:12:37.204+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-11-25T17:12:37.204+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 83 records totaling to 10146 bytes
+2018-11-25T17:12:37.204+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] 
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] 
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-11-25T17:12:37.220+0200 I CONTROL  [initandlisten] 
+2018-11-25T17:12:37.280+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'rs3/diagnostic.data'
+2018-11-25T17:12:37.282+0200 I REPL     [initandlisten] Rollback ID is 1
+2018-11-25T17:12:37.283+0200 I REPL     [initandlisten] No oplog entries to apply for recovery. appliedThrough and checkpointTimestamp are both null.
+2018-11-25T17:12:37.284+0200 I NETWORK  [initandlisten] waiting for connections on port 27019
+2018-11-25T17:12:37.284+0200 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Replication has not yet been configured
+2018-11-25T17:12:37.284+0200 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2018-11-25T17:12:37.286+0200 I REPL     [replexec-0] New replica set config in use: { _id: "padRepl", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-25T17:12:37.286+0200 I REPL     [replexec-0] This node is localhost:27019 in the config
+2018-11-25T17:12:37.286+0200 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2018-11-25T17:12:37.287+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-25T17:12:37.287+0200 I REPL     [replexec-0] Starting replication storage threads
+2018-11-25T17:12:37.287+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-25T17:12:37.288+0200 I REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2018-11-25T17:12:37.288+0200 I REPL     [replexec-0] Starting replication fetcher thread
+2018-11-25T17:12:37.288+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 1ms (1 connections now open to localhost:27017)
+2018-11-25T17:12:37.288+0200 I REPL     [replexec-0] Starting replication applier thread
+2018-11-25T17:12:37.288+0200 I REPL     [replexec-0] Starting replication reporter thread
+2018-11-25T17:12:37.288+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27018, took 1ms (1 connections now open to localhost:27018)
+2018-11-25T17:12:37.288+0200 I REPL     [replexec-1] Member localhost:27017 is now in state SECONDARY
+2018-11-25T17:12:37.289+0200 I REPL     [replexec-2] Member localhost:27018 is now in state SECONDARY
+2018-11-25T17:12:37.289+0200 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2018-11-25T17:12:37.289+0200 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2018-11-25T17:12:37.586+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41626 #1 (1 connection now open)
+2018-11-25T17:12:37.587+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:41626 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:37.588+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41630 #2 (2 connections now open)
+2018-11-25T17:12:37.588+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:41630 conn2: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:37.768+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41632 #3 (3 connections now open)
+2018-11-25T17:12:37.769+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:41632 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:48.215+0200 I REPL     [replexec-0] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2018-11-25T17:12:48.215+0200 I REPL     [replexec-0] conducting a dry run election to see if we could be elected. current term: 1
+2018-11-25T17:12:48.216+0200 I REPL     [replexec-1] VoteRequester(term 1 dry run) received a yes vote from localhost:27017; response message: { term: 1, voteGranted: true, reason: "", ok: 1.0, operationTime: Timestamp(1543092977, 1), $clusterTime: { clusterTime: Timestamp(1543092977, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } } }
+2018-11-25T17:12:48.216+0200 I REPL     [replexec-0] dry election run succeeded, running for election in term 2
+2018-11-25T17:12:48.221+0200 I REPL     [replexec-1] VoteRequester(term 2) received a yes vote from localhost:27018; response message: { term: 2, voteGranted: true, reason: "", ok: 1.0, operationTime: Timestamp(1543092977, 1), $clusterTime: { clusterTime: Timestamp(1543092977, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } } }
+2018-11-25T17:12:48.222+0200 I REPL     [replexec-0] election succeeded, assuming primary role in term 2
+2018-11-25T17:12:48.222+0200 I REPL     [replexec-0] transition to PRIMARY from SECONDARY
+2018-11-25T17:12:48.222+0200 I REPL     [replexec-0] Resetting sync source to empty, which was :27017
+2018-11-25T17:12:48.222+0200 I REPL     [replexec-0] Entering primary catch-up mode.
+2018-11-25T17:12:48.223+0200 I REPL     [replexec-0] Caught up to the latest optime known via heartbeats after becoming primary.
+2018-11-25T17:12:48.223+0200 I REPL     [replexec-0] Exited primary catch-up mode.
+2018-11-25T17:12:49.293+0200 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2018-11-25T17:12:49.615+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41638 #4 (4 connections now open)
+2018-11-25T17:12:49.615+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41640 #5 (5 connections now open)
+2018-11-25T17:12:49.616+0200 I NETWORK  [conn4] received client metadata from 127.0.0.1:41638 conn4: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:49.616+0200 I NETWORK  [conn5] received client metadata from 127.0.0.1:41640 conn5: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:50.091+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41642 #6 (6 connections now open)
+2018-11-25T17:12:50.092+0200 I NETWORK  [conn6] received client metadata from 127.0.0.1:41642 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:50.095+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41644 #7 (7 connections now open)
+2018-11-25T17:12:50.095+0200 I NETWORK  [conn7] received client metadata from 127.0.0.1:41644 conn7: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:50.272+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41646 #8 (8 connections now open)
+2018-11-25T17:12:50.272+0200 I NETWORK  [conn8] received client metadata from 127.0.0.1:41646 conn8: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:12:50.276+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41648 #9 (9 connections now open)
+2018-11-25T17:12:50.276+0200 I NETWORK  [conn9] received client metadata from 127.0.0.1:41648 conn9: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:17:37.264+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41920 #10 (10 connections now open)
+2018-11-25T17:17:37.265+0200 I NETWORK  [conn10] received client metadata from 127.0.0.1:41920 conn10: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:17:37.266+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41922 #11 (11 connections now open)
+2018-11-25T17:17:37.266+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41924 #12 (12 connections now open)
+2018-11-25T17:17:37.266+0200 I NETWORK  [conn11] received client metadata from 127.0.0.1:41922 conn11: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:17:37.267+0200 I NETWORK  [conn12] received client metadata from 127.0.0.1:41924 conn12: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T17:23:21.959+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42180 #13 (13 connections now open)
+2018-11-25T17:23:21.975+0200 I NETWORK  [conn13] received client metadata from 127.0.0.1:42180 conn13: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:23:48.954+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42188 #14 (14 connections now open)
+2018-11-25T17:23:48.969+0200 I NETWORK  [conn14] received client metadata from 127.0.0.1:42188 conn14: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:25:42.022+0200 I STORAGE  [conn14] createCollection: pad-project.departments with generated UUID: b560d296-a993-490c-8e57-5e1ea4f5d031
+2018-11-25T17:27:26.644+0200 I NETWORK  [conn13] end connection 127.0.0.1:42180 (13 connections now open)
+2018-11-25T17:27:29.920+0200 I NETWORK  [conn14] end connection 127.0.0.1:42188 (12 connections now open)
+2018-11-25T17:27:31.354+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42480 #15 (13 connections now open)
+2018-11-25T17:27:31.381+0200 I NETWORK  [conn15] received client metadata from 127.0.0.1:42480 conn15: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:27:34.905+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42488 #16 (14 connections now open)
+2018-11-25T17:27:34.918+0200 I NETWORK  [conn16] received client metadata from 127.0.0.1:42488 conn16: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:28:08.937+0200 I STORAGE  [conn15] createCollection: pad-project.students with generated UUID: f9777e9d-9866-4cb5-b72e-1d5ad1b3cc33
+2018-11-25T17:34:14.237+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42972 #17 (15 connections now open)
+2018-11-25T17:34:29.238+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42986 #18 (16 connections now open)
+2018-11-25T17:38:04.274+0200 I NETWORK  [conn18] end connection 127.0.0.1:42986 (15 connections now open)
+2018-11-25T17:38:04.274+0200 I NETWORK  [conn17] end connection 127.0.0.1:42972 (14 connections now open)
+2018-11-25T17:38:07.034+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:43358 #19 (15 connections now open)
+2018-11-25T17:38:32.966+0200 I NETWORK  [conn19] end connection 127.0.0.1:43358 (14 connections now open)
+2018-11-25T17:41:52.982+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:43676 #20 (15 connections now open)
+2018-11-25T17:42:07.982+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:43706 #21 (16 connections now open)
+2018-11-25T17:52:10.339+0200 I NETWORK  [conn21] end connection 127.0.0.1:43706 (15 connections now open)
+2018-11-25T17:52:10.339+0200 I NETWORK  [conn20] end connection 127.0.0.1:43676 (14 connections now open)
+2018-11-25T17:52:12.436+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44422 #22 (15 connections now open)
+2018-11-25T17:52:27.436+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44436 #23 (16 connections now open)
+2018-11-25T17:56:26.496+0200 I NETWORK  [conn16] end connection 127.0.0.1:42488 (15 connections now open)
+2018-11-25T17:56:28.750+0200 I NETWORK  [conn15] end connection 127.0.0.1:42480 (14 connections now open)
+2018-11-25T17:56:35.449+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44696 #24 (15 connections now open)
+2018-11-25T17:56:35.467+0200 I NETWORK  [conn24] received client metadata from 127.0.0.1:44696 conn24: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:56:40.409+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44708 #25 (16 connections now open)
+2018-11-25T17:56:40.435+0200 I NETWORK  [conn25] received client metadata from 127.0.0.1:44708 conn25: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:56:44.438+0200 I NETWORK  [conn23] end connection 127.0.0.1:44436 (15 connections now open)
+2018-11-25T17:56:44.439+0200 I NETWORK  [conn22] end connection 127.0.0.1:44422 (14 connections now open)
+2018-11-25T17:56:48.177+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44720 #26 (15 connections now open)
+2018-11-25T17:57:03.178+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44750 #27 (16 connections now open)
+2018-11-25T17:58:34.092+0200 I NETWORK  [conn25] end connection 127.0.0.1:44708 (15 connections now open)
+2018-11-25T17:58:36.242+0200 I NETWORK  [conn24] end connection 127.0.0.1:44696 (14 connections now open)
+2018-11-25T17:58:37.670+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44868 #28 (15 connections now open)
+2018-11-25T17:58:37.680+0200 I NETWORK  [conn28] received client metadata from 127.0.0.1:44868 conn28: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T17:58:41.740+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:44874 #29 (16 connections now open)
+2018-11-25T17:58:41.751+0200 I NETWORK  [conn29] received client metadata from 127.0.0.1:44874 conn29: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:01:43.526+0200 I NETWORK  [conn29] end connection 127.0.0.1:44874 (15 connections now open)
+2018-11-25T18:01:45.591+0200 I NETWORK  [conn28] end connection 127.0.0.1:44868 (14 connections now open)
+2018-11-25T18:01:47.228+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:45066 #30 (15 connections now open)
+2018-11-25T18:01:47.238+0200 I NETWORK  [conn30] received client metadata from 127.0.0.1:45066 conn30: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:01:51.591+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:45072 #31 (16 connections now open)
+2018-11-25T18:01:51.603+0200 I NETWORK  [conn31] received client metadata from 127.0.0.1:45072 conn31: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:02:19.183+0200 I NETWORK  [conn27] end connection 127.0.0.1:44750 (15 connections now open)
+2018-11-25T18:02:19.183+0200 I NETWORK  [conn26] end connection 127.0.0.1:44720 (14 connections now open)
+2018-11-25T18:02:20.384+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:45124 #32 (15 connections now open)
+2018-11-25T18:02:35.385+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:45174 #33 (16 connections now open)
+2018-11-25T18:22:38.392+0200 I NETWORK  [conn33] end connection 127.0.0.1:45174 (15 connections now open)
+2018-11-25T18:22:38.392+0200 I NETWORK  [conn32] end connection 127.0.0.1:45124 (14 connections now open)
+2018-11-25T18:28:30.244+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:46580 #34 (15 connections now open)
+2018-11-25T18:28:30.264+0200 I NETWORK  [conn34] received client metadata from 127.0.0.1:46580 conn34: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T18:29:07.453+0200 I REPL     [conn34] replSetReconfig admin command received from client; new config: { _id: "padRepl", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node1" }, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node2" }, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node3" }, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-25T18:29:07.456+0200 I REPL     [conn34] replSetReconfig config object with 3 members parses ok
+2018-11-25T18:29:07.458+0200 I REPL     [replexec-57] New replica set config in use: { _id: "padRepl", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node1" }, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node2" }, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node3" }, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-25T18:29:07.458+0200 I REPL     [replexec-57] This node is localhost:27019 in the config
+2018-11-25T18:29:07.466+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:46610 #35 (16 connections now open)
+2018-11-25T18:29:07.467+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:46612 #36 (17 connections now open)
+2018-11-25T18:29:07.473+0200 I NETWORK  [conn35] end connection 127.0.0.1:46610 (16 connections now open)
+2018-11-25T18:29:07.474+0200 I NETWORK  [conn36] end connection 127.0.0.1:46612 (15 connections now open)
+2018-11-25T18:33:19.695+0200 I NETWORK  [conn34] end connection 127.0.0.1:46580 (14 connections now open)
+2018-11-25T18:33:26.156+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:46914 #37 (15 connections now open)
+2018-11-25T18:33:26.180+0200 I NETWORK  [conn37] received client metadata from 127.0.0.1:46914 conn37: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T18:34:29.850+0200 I NETWORK  [conn31] end connection 127.0.0.1:45072 (14 connections now open)
+2018-11-25T18:34:50.143+0200 I NETWORK  [conn30] end connection 127.0.0.1:45066 (13 connections now open)
+2018-11-25T18:34:58.010+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:46996 #38 (14 connections now open)
+2018-11-25T18:34:58.020+0200 I NETWORK  [conn38] received client metadata from 127.0.0.1:46996 conn38: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:35:00.882+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47004 #39 (15 connections now open)
+2018-11-25T18:35:00.895+0200 I NETWORK  [conn39] received client metadata from 127.0.0.1:47004 conn39: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:35:25.471+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47026 #40 (16 connections now open)
+2018-11-25T18:35:40.473+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47056 #41 (17 connections now open)
+2018-11-25T18:37:59.283+0200 I NETWORK  [conn39] end connection 127.0.0.1:47004 (16 connections now open)
+2018-11-25T18:38:02.453+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47308 #42 (17 connections now open)
+2018-11-25T18:38:02.463+0200 I NETWORK  [conn42] received client metadata from 127.0.0.1:47308 conn42: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:38:05.952+0200 I NETWORK  [conn38] end connection 127.0.0.1:46996 (16 connections now open)
+2018-11-25T18:38:10.883+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47316 #43 (17 connections now open)
+2018-11-25T18:38:10.908+0200 I NETWORK  [conn43] received client metadata from 127.0.0.1:47316 conn43: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:38:15.480+0200 I NETWORK  [conn41] end connection 127.0.0.1:47056 (16 connections now open)
+2018-11-25T18:38:15.480+0200 I NETWORK  [conn40] end connection 127.0.0.1:47026 (15 connections now open)
+2018-11-25T18:38:16.688+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47330 #44 (16 connections now open)
+2018-11-25T18:38:31.696+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47354 #45 (17 connections now open)
+2018-11-25T18:39:39.954+0200 I NETWORK  [conn43] end connection 127.0.0.1:47316 (16 connections now open)
+2018-11-25T18:39:43.053+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47450 #46 (17 connections now open)
+2018-11-25T18:39:43.064+0200 I NETWORK  [conn46] received client metadata from 127.0.0.1:47450 conn46: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:39:44.442+0200 I NETWORK  [conn42] end connection 127.0.0.1:47308 (16 connections now open)
+2018-11-25T18:39:45.730+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47456 #47 (17 connections now open)
+2018-11-25T18:39:45.748+0200 I NETWORK  [conn47] received client metadata from 127.0.0.1:47456 conn47: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:39:47.692+0200 I NETWORK  [conn45] end connection 127.0.0.1:47354 (16 connections now open)
+2018-11-25T18:39:47.693+0200 I NETWORK  [conn44] end connection 127.0.0.1:47330 (15 connections now open)
+2018-11-25T18:39:48.807+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47464 #48 (16 connections now open)
+2018-11-25T18:40:03.813+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:47498 #49 (17 connections now open)
+2018-11-25T18:40:15.850+0200 I NETWORK  [conn37] end connection 127.0.0.1:46914 (16 connections now open)
+2018-11-25T18:46:16.166+0200 I NETWORK  [conn47] end connection 127.0.0.1:47456 (15 connections now open)
+2018-11-25T18:46:18.426+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48012 #50 (16 connections now open)
+2018-11-25T18:46:18.436+0200 I NETWORK  [conn50] received client metadata from 127.0.0.1:48012 conn50: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:46:22.169+0200 I NETWORK  [conn46] end connection 127.0.0.1:47450 (15 connections now open)
+2018-11-25T18:46:26.592+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48024 #51 (16 connections now open)
+2018-11-25T18:46:26.621+0200 I NETWORK  [conn51] received client metadata from 127.0.0.1:48024 conn51: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:46:41.812+0200 I NETWORK  [conn49] end connection 127.0.0.1:47498 (15 connections now open)
+2018-11-25T18:46:41.813+0200 I NETWORK  [conn48] end connection 127.0.0.1:47464 (14 connections now open)
+2018-11-25T18:46:43.445+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48050 #52 (15 connections now open)
+2018-11-25T18:46:58.444+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48072 #53 (16 connections now open)
+2018-11-25T18:49:27.288+0200 I NETWORK  [conn51] end connection 127.0.0.1:48024 (15 connections now open)
+2018-11-25T18:49:29.554+0200 I NETWORK  [conn50] end connection 127.0.0.1:48012 (14 connections now open)
+2018-11-25T18:49:31.661+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48328 #54 (15 connections now open)
+2018-11-25T18:49:31.684+0200 I NETWORK  [conn54] received client metadata from 127.0.0.1:48328 conn54: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:49:35.115+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48336 #55 (16 connections now open)
+2018-11-25T18:49:35.137+0200 I NETWORK  [conn55] received client metadata from 127.0.0.1:48336 conn55: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:49:37.445+0200 I NETWORK  [conn53] end connection 127.0.0.1:48072 (15 connections now open)
+2018-11-25T18:49:37.446+0200 I NETWORK  [conn52] end connection 127.0.0.1:48050 (14 connections now open)
+2018-11-25T18:49:38.111+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48342 #56 (15 connections now open)
+2018-11-25T18:49:53.115+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48388 #57 (16 connections now open)
+2018-11-25T18:53:00.592+0200 I NETWORK  [conn55] end connection 127.0.0.1:48336 (15 connections now open)
+2018-11-25T18:53:02.385+0200 I NETWORK  [conn54] end connection 127.0.0.1:48328 (14 connections now open)
+2018-11-25T18:53:05.132+0200 I NETWORK  [conn57] end connection 127.0.0.1:48388 (13 connections now open)
+2018-11-25T18:53:05.132+0200 I NETWORK  [conn56] end connection 127.0.0.1:48342 (12 connections now open)
+2018-11-25T18:53:17.342+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48628 #58 (13 connections now open)
+2018-11-25T18:53:17.356+0200 I NETWORK  [conn58] received client metadata from 127.0.0.1:48628 conn58: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:53:20.685+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48634 #59 (14 connections now open)
+2018-11-25T18:53:20.696+0200 I NETWORK  [conn59] received client metadata from 127.0.0.1:48634 conn59: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:53:23.494+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48642 #60 (15 connections now open)
+2018-11-25T18:53:38.494+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48678 #61 (16 connections now open)
+2018-11-25T18:55:29.122+0200 I NETWORK  [conn59] end connection 127.0.0.1:48634 (15 connections now open)
+2018-11-25T18:55:32.462+0200 I NETWORK  [conn58] end connection 127.0.0.1:48628 (14 connections now open)
+2018-11-25T18:55:47.503+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48764 #62 (15 connections now open)
+2018-11-25T18:55:47.519+0200 I NETWORK  [conn62] received client metadata from 127.0.0.1:48764 conn62: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:55:56.503+0200 I NETWORK  [conn62] end connection 127.0.0.1:48764 (14 connections now open)
+2018-11-25T18:55:57.856+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48776 #63 (15 connections now open)
+2018-11-25T18:55:57.871+0200 I NETWORK  [conn63] received client metadata from 127.0.0.1:48776 conn63: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:56:15.392+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48792 #64 (16 connections now open)
+2018-11-25T18:56:15.405+0200 I NETWORK  [conn64] received client metadata from 127.0.0.1:48792 conn64: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T18:56:18.501+0200 I NETWORK  [conn61] end connection 127.0.0.1:48678 (15 connections now open)
+2018-11-25T18:56:18.501+0200 I NETWORK  [conn60] end connection 127.0.0.1:48642 (14 connections now open)
+2018-11-25T18:56:20.976+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48796 #65 (15 connections now open)
+2018-11-25T18:56:35.976+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:48826 #66 (16 connections now open)
+2018-11-25T19:00:07.406+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:49080 #67 (17 connections now open)
+2018-11-25T19:00:07.407+0200 I NETWORK  [conn67] received client metadata from 127.0.0.1:49080 conn67: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:00:07.486+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:49082 #68 (18 connections now open)
+2018-11-25T19:00:07.486+0200 I NETWORK  [conn68] received client metadata from 127.0.0.1:49082 conn68: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:01:23.280+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:49128 #69 (19 connections now open)
+2018-11-25T19:01:23.281+0200 I NETWORK  [conn69] received client metadata from 127.0.0.1:49128 conn69: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:01:23.374+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:49130 #70 (20 connections now open)
+2018-11-25T19:01:23.374+0200 I NETWORK  [conn70] received client metadata from 127.0.0.1:49130 conn70: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:25:38.907+0200 I NETWORK  [conn64] end connection 127.0.0.1:48792 (19 connections now open)
+2018-11-25T19:25:43.076+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:50320 #71 (20 connections now open)
+2018-11-25T19:25:43.097+0200 I NETWORK  [conn71] received client metadata from 127.0.0.1:50320 conn71: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:27:37.010+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:50426 #72 (21 connections now open)
+2018-11-25T19:27:37.011+0200 I NETWORK  [conn72] received client metadata from 127.0.0.1:50426 conn72: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:27:37.074+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:50428 #73 (22 connections now open)
+2018-11-25T19:27:37.074+0200 I NETWORK  [conn73] received client metadata from 127.0.0.1:50428 conn73: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:31:41.908+0200 I NETWORK  [conn71] end connection 127.0.0.1:50320 (21 connections now open)
+2018-11-25T19:31:48.155+0200 I NETWORK  [conn63] end connection 127.0.0.1:48776 (20 connections now open)
+2018-11-25T19:34:34.522+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:50822 #74 (21 connections now open)
+2018-11-25T19:34:34.530+0200 I NETWORK  [conn74] received client metadata from 127.0.0.1:50822 conn74: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:34:40.896+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:50830 #75 (22 connections now open)
+2018-11-25T19:34:40.910+0200 I NETWORK  [conn75] received client metadata from 127.0.0.1:50830 conn75: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:34:46.719+0200 I NETWORK  [conn75] end connection 127.0.0.1:50830 (21 connections now open)
+2018-11-25T19:36:56.329+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:50980 #76 (22 connections now open)
+2018-11-25T19:36:56.340+0200 I NETWORK  [conn76] received client metadata from 127.0.0.1:50980 conn76: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:37:12.738+0200 I NETWORK  [conn74] end connection 127.0.0.1:50822 (21 connections now open)
+2018-11-25T19:44:35.875+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:51630 #77 (22 connections now open)
+2018-11-25T19:44:35.890+0200 I NETWORK  [conn77] received client metadata from 127.0.0.1:51630 conn77: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:45:33.803+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:51724 #78 (23 connections now open)
+2018-11-25T19:45:33.804+0200 I NETWORK  [conn78] received client metadata from 127.0.0.1:51724 conn78: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:45:33.867+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:51726 #79 (24 connections now open)
+2018-11-25T19:45:33.867+0200 I NETWORK  [conn79] received client metadata from 127.0.0.1:51726 conn79: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:45:50.982+0200 I NETWORK  [conn66] end connection 127.0.0.1:48826 (23 connections now open)
+2018-11-25T19:45:50.983+0200 I NETWORK  [conn65] end connection 127.0.0.1:48796 (22 connections now open)
+2018-11-25T19:45:53.924+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:51742 #80 (23 connections now open)
+2018-11-25T19:46:08.929+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:51752 #81 (24 connections now open)
+2018-11-25T19:51:20.335+0200 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-11-25T19:51:20.335+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-25T19:51:20.335+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27019.sock
+2018-11-25T19:51:20.337+0200 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-11-25T19:51:20.337+0200 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-11-25T19:51:20.338+0200 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-11-25T19:51:20.338+0200 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-11-25T19:51:20.509+0200 I NETWORK  [conn12] end connection 127.0.0.1:41924 (23 connections now open)
+2018-11-25T19:51:20.509+0200 I NETWORK  [conn11] end connection 127.0.0.1:41922 (21 connections now open)
+2018-11-25T19:51:20.509+0200 I NETWORK  [conn3] end connection 127.0.0.1:41632 (20 connections now open)
+2018-11-25T19:51:20.509+0200 I NETWORK  [conn9] end connection 127.0.0.1:41648 (19 connections now open)
+2018-11-25T19:51:20.509+0200 I NETWORK  [conn10] end connection 127.0.0.1:41920 (22 connections now open)
+2018-11-25T19:51:20.519+0200 I NETWORK  [conn7] end connection 127.0.0.1:41644 (18 connections now open)
+2018-11-25T19:51:20.519+0200 I NETWORK  [conn2] end connection 127.0.0.1:41630 (15 connections now open)
+2018-11-25T19:51:20.519+0200 I NETWORK  [conn1] end connection 127.0.0.1:41626 (14 connections now open)
+2018-11-25T19:51:20.519+0200 I NETWORK  [conn4] end connection 127.0.0.1:41638 (16 connections now open)
+2018-11-25T19:51:20.519+0200 I NETWORK  [conn5] end connection 127.0.0.1:41640 (17 connections now open)
+2018-11-25T19:51:21.325+0200 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-11-25T19:51:21.326+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-25T19:51:21.339+0200 I STORAGE  [WTOplogJournalThread] oplog journal thread loop shutting down
+2018-11-25T19:51:21.339+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-25T19:51:21.440+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-25T19:51:21.440+0200 I CONTROL  [signalProcessingThread] now exiting
+2018-11-25T19:51:21.440+0200 I CONTROL  [signalProcessingThread] shutting down with code:0

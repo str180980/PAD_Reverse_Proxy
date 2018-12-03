@@ -1,0 +1,84 @@
+<%const setChecked = (obj) => obj.checked ? "checked" : ""%> <% const saveId =
+locals.type === "edit" ? "save-edit-company" : "save-create-company" %>
+<form id="">
+  <div class="modal-content" modal-type="<%=locals.type%>">
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="center-align card-panel grey ">
+          <span class=" white-text"
+            ><strong><h5><%=locals.title%></h5></strong>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m6">
+        <input
+          id="firstName"
+          name="firstName"
+          type="text"
+          value="<%=locals.hasOwnProperty('student') ? locals.student.firstName : ''%>"
+          required
+        />
+        <label for="firstName" class="active">Nume</label>
+      </div>
+      <div class="input-field col s12 m6">
+        <input
+          id="lastName"
+          name="lastName"
+          type="text"
+          value="<%=locals.hasOwnProperty('student') ? locals.student.lastName : ''%>"
+          required
+        />
+        <label for="lastName" class="active">Prenume</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 m6">
+        <label for="tel" class="active">Telefon</label>
+        <input
+          id="tel"
+          name="phone"
+          value="<%=locals.hasOwnProperty('student') ? locals.student.tel : ''%>"
+          required
+        />
+      </div>
+      <div class="input-field col s12 m6">
+        <label for="age" class="active">Varsta</label>
+        <input
+          id="age"
+          name="age"
+          type="text"
+          value="<%=locals.hasOwnProperty('student') ? locals.student.age : ''%>"
+          required
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <select id="deps-select">
+          <option value="" disabled selected>Choose your option</option>
+          <% locals.deps.forEach((el, iss) => { %>
+          <option value="<%=el._id%>"><%=el.name%></option>
+          <% }); %>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      modal-id="<%=locals.student && locals.student._id%>"
+      id="<%=saveId%>"
+      class="modal-action waves-effect waves-green btn-flat"
+    >
+      Salvează
+    </button>
+    <a
+      href="#!"
+      class="modal-action modal-close waves-effect waves-green btn-flat"
+    >
+      Anulează
+    </a>
+  </div>
+</form>

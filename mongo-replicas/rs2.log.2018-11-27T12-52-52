@@ -1,0 +1,201 @@
+2018-11-26T10:03:57.215+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3502 port=27018 dbpath=rs2 64-bit host=staverPC
+2018-11-26T10:03:57.215+0200 I CONTROL  [initandlisten] db version v3.6.8
+2018-11-26T10:03:57.215+0200 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten] modules: none
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten] build environment:
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-26T10:03:57.216+0200 I CONTROL  [initandlisten] options: { net: { port: 27018 }, replication: { replSet: "padRepl" }, storage: { dbPath: "rs2" }, systemLog: { destination: "file", path: "rs2.log" } }
+2018-11-26T10:03:57.216+0200 I -        [initandlisten] Detected data files in rs2 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-11-26T10:03:57.216+0200 I STORAGE  [initandlisten] 
+2018-11-26T10:03:57.216+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-11-26T10:03:57.216+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-11-26T10:03:57.217+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3376M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-11-26T10:03:58.164+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:164826][3502:0x7fe713fd59c0], txn-recover: Main recovery loop: starting at 3/2423552
+2018-11-26T10:03:58.453+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:453753][3502:0x7fe713fd59c0], txn-recover: Recovering log 3 through 4
+2018-11-26T10:03:58.570+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:570436][3502:0x7fe713fd59c0], txn-recover: Recovering log 4 through 4
+2018-11-26T10:03:58.650+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:650537][3502:0x7fe713fd59c0], txn-recover: Set global recovery timestamp: 0
+2018-11-26T10:03:58.691+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-11-26T10:03:58.691+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 3380 records totaling to 376376 bytes
+2018-11-26T10:03:58.691+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] 
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] 
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-11-26T10:03:58.708+0200 I CONTROL  [initandlisten] 
+2018-11-26T10:03:58.728+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'rs2/diagnostic.data'
+2018-11-26T10:03:58.729+0200 I REPL     [initandlisten] Rollback ID is 1
+2018-11-26T10:03:58.729+0200 I REPL     [initandlisten] No oplog entries to apply for recovery. appliedThrough and checkpointTimestamp are both null.
+2018-11-26T10:03:58.730+0200 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2018-11-26T10:03:58.730+0200 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Replication has not yet been configured
+2018-11-26T10:03:58.730+0200 I NETWORK  [initandlisten] waiting for connections on port 27018
+2018-11-26T10:03:58.730+0200 I REPL     [replexec-0] New replica set config in use: { _id: "padRepl", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node1" }, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node2" }, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node3" }, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-26T10:03:58.730+0200 I REPL     [replexec-0] This node is localhost:27018 in the config
+2018-11-26T10:03:58.730+0200 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-0] Starting replication storage threads
+2018-11-26T10:03:58.731+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:03:58.731+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27019
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-0] Starting replication fetcher thread
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-0] Starting replication applier thread
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-0] Starting replication reporter thread
+2018-11-26T10:03:58.731+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 0ms (1 connections now open to localhost:27017)
+2018-11-26T10:03:58.731+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27019, took 0ms (1 connections now open to localhost:27019)
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-1] Member localhost:27017 is now in state SECONDARY
+2018-11-26T10:03:58.731+0200 I REPL     [replexec-2] Member localhost:27019 is now in state SECONDARY
+2018-11-26T10:03:58.731+0200 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2018-11-26T10:03:58.731+0200 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2018-11-26T10:03:59.122+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33654 #1 (1 connection now open)
+2018-11-26T10:03:59.123+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:33654 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:03:59.127+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33656 #2 (2 connections now open)
+2018-11-26T10:03:59.127+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:33656 conn2: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:03:59.226+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33660 #3 (3 connections now open)
+2018-11-26T10:03:59.227+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:33660 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:03.216+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33666 #4 (4 connections now open)
+2018-11-26T10:04:09.251+0200 I REPL     [replexec-1] Member localhost:27019 is now in state PRIMARY
+2018-11-26T10:04:11.735+0200 I REPL     [rsBackgroundSync] sync source candidate: localhost:27019
+2018-11-26T10:04:11.735+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-26T10:04:11.736+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 1ms (1 connections now open to localhost:27019)
+2018-11-26T10:04:11.736+0200 I REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27019
+2018-11-26T10:04:11.737+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-26T10:04:11.737+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 0ms (2 connections now open to localhost:27019)
+2018-11-26T10:04:18.223+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33696 #5 (5 connections now open)
+2018-11-26T10:06:52.835+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33858 #6 (6 connections now open)
+2018-11-26T10:06:52.836+0200 I NETWORK  [conn6] received client metadata from 127.0.0.1:33858 conn6: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:06:52.905+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33860 #7 (7 connections now open)
+2018-11-26T10:06:52.905+0200 I NETWORK  [conn7] received client metadata from 127.0.0.1:33860 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:07:19.699+0200 I COMMAND  [repl writer worker 2] CMD: drop pad-project.departments
+2018-11-26T10:07:19.699+0200 I STORAGE  [repl writer worker 2] dropCollection: pad-project.departments (b560d296-a993-490c-8e57-5e1ea4f5d031) - renaming to drop-pending collection: pad-project.system.drop.1543219639i1t4.departments with drop optime { ts: Timestamp(1543219639, 1), t: 4 }
+2018-11-26T10:07:19.714+0200 I REPL     [replication-1] Completing collection drop for pad-project.system.drop.1543219639i1t4.departments with drop optime { ts: Timestamp(1543219639, 1), t: 4 } (notification optime: { ts: Timestamp(1543219639, 1), t: 4 })
+2018-11-26T10:07:19.714+0200 I STORAGE  [replication-1] Finishing collection drop for pad-project.system.drop.1543219639i1t4.departments (b560d296-a993-490c-8e57-5e1ea4f5d031).
+2018-11-26T10:07:19.714+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543219639i1t4.departments with drop optime { ts: Timestamp(1543219639, 1), t: 4 } (notification optime: { ts: Timestamp(1543219639, 1), t: 4 })
+2018-11-26T10:07:23.237+0200 I COMMAND  [repl writer worker 8] CMD: drop pad-project.students
+2018-11-26T10:07:23.237+0200 I STORAGE  [repl writer worker 8] dropCollection: pad-project.students (f9777e9d-9866-4cb5-b72e-1d5ad1b3cc33) - renaming to drop-pending collection: pad-project.system.drop.1543219643i1t4.students with drop optime { ts: Timestamp(1543219643, 1), t: 4 }
+2018-11-26T10:07:23.243+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543219643i1t4.students with drop optime { ts: Timestamp(1543219643, 1), t: 4 } (notification optime: { ts: Timestamp(1543219643, 1), t: 4 })
+2018-11-26T10:07:23.243+0200 I STORAGE  [replication-0] Finishing collection drop for pad-project.system.drop.1543219643i1t4.students (f9777e9d-9866-4cb5-b72e-1d5ad1b3cc33).
+2018-11-26T10:07:23.243+0200 I REPL     [replication-1] Completing collection drop for pad-project.system.drop.1543219643i1t4.students with drop optime { ts: Timestamp(1543219643, 1), t: 4 } (notification optime: { ts: Timestamp(1543219643, 1), t: 4 })
+2018-11-26T10:07:56.407+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33966 #8 (8 connections now open)
+2018-11-26T10:07:56.423+0200 I NETWORK  [conn8] received client metadata from 127.0.0.1:33966 conn8: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:00.773+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33978 #9 (9 connections now open)
+2018-11-26T10:08:00.790+0200 I NETWORK  [conn9] received client metadata from 127.0.0.1:33978 conn9: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:03.283+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:33984 #10 (10 connections now open)
+2018-11-26T10:08:03.300+0200 I NETWORK  [conn10] received client metadata from 127.0.0.1:33984 conn10: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:23.903+0200 I NETWORK  [conn8] end connection 127.0.0.1:33966 (9 connections now open)
+2018-11-26T10:08:26.653+0200 I NETWORK  [conn10] end connection 127.0.0.1:33984 (8 connections now open)
+2018-11-26T10:08:26.967+0200 I NETWORK  [conn9] end connection 127.0.0.1:33978 (7 connections now open)
+2018-11-26T10:08:45.328+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34104 #11 (8 connections now open)
+2018-11-26T10:08:45.342+0200 I NETWORK  [conn11] received client metadata from 127.0.0.1:34104 conn11: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:53.485+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34118 #12 (9 connections now open)
+2018-11-26T10:08:53.506+0200 I NETWORK  [conn12] received client metadata from 127.0.0.1:34118 conn12: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:58.725+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34122 #13 (10 connections now open)
+2018-11-26T10:08:58.725+0200 I NETWORK  [conn13] received client metadata from 127.0.0.1:34122 conn13: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:08:58.729+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34132 #14 (11 connections now open)
+2018-11-26T10:08:58.730+0200 I NETWORK  [conn14] received client metadata from 127.0.0.1:34132 conn14: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.730+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27018 (1 connections now open to localhost:27018 with a 5 second timeout)
+2018-11-26T10:08:58.731+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:27017 (1 connections now open to localhost:27017 with a 5 second timeout)
+2018-11-26T10:08:58.731+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 5 second timeout)
+2018-11-26T10:08:58.733+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 0 second timeout)
+2018-11-26T10:08:58.733+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27019 (2 connections now open to localhost:27019 with a 0 second timeout)
+2018-11-26T10:08:58.733+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:09:00.356+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34144 #15 (12 connections now open)
+2018-11-26T10:09:00.373+0200 I NETWORK  [conn15] received client metadata from 127.0.0.1:34144 conn15: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:10:24.291+0200 I NETWORK  [conn11] end connection 127.0.0.1:34104 (11 connections now open)
+2018-11-26T10:10:28.622+0200 I NETWORK  [conn12] end connection 127.0.0.1:34118 (10 connections now open)
+2018-11-26T10:10:30.671+0200 I NETWORK  [conn15] end connection 127.0.0.1:34144 (9 connections now open)
+2018-11-26T10:13:58.729+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:13:58.731+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:14:19.839+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34634 #16 (10 connections now open)
+2018-11-26T10:14:19.854+0200 I NETWORK  [conn16] received client metadata from 127.0.0.1:34634 conn16: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:14:24.566+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34642 #17 (11 connections now open)
+2018-11-26T10:14:24.582+0200 I NETWORK  [conn17] received client metadata from 127.0.0.1:34642 conn17: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:14:30.259+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:34648 #18 (12 connections now open)
+2018-11-26T10:14:30.281+0200 I NETWORK  [conn18] received client metadata from 127.0.0.1:34648 conn18: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:14:51.711+0200 I STORAGE  [repl writer worker 3] createCollection: pad-project.departments with provided UUID: 9ca295bd-2fd0-48ae-a0d1-13f34cffb9ab
+2018-11-26T10:15:06.123+0200 I STORAGE  [repl writer worker 6] createCollection: pad-project.students with provided UUID: acafc0dd-fb34-4e05-991e-7defcc31cd45
+2018-11-26T10:18:06.323+0200 I COMMAND  [repl writer worker 13] CMD: drop pad-project.departments
+2018-11-26T10:18:06.323+0200 I STORAGE  [repl writer worker 13] dropCollection: pad-project.departments (9ca295bd-2fd0-48ae-a0d1-13f34cffb9ab) - renaming to drop-pending collection: pad-project.system.drop.1543220286i1t4.departments with drop optime { ts: Timestamp(1543220286, 1), t: 4 }
+2018-11-26T10:18:06.341+0200 I REPL     [replication-1] Completing collection drop for pad-project.system.drop.1543220286i1t4.departments with drop optime { ts: Timestamp(1543220286, 1), t: 4 } (notification optime: { ts: Timestamp(1543220286, 1), t: 4 })
+2018-11-26T10:18:06.341+0200 I STORAGE  [replication-1] Finishing collection drop for pad-project.system.drop.1543220286i1t4.departments (9ca295bd-2fd0-48ae-a0d1-13f34cffb9ab).
+2018-11-26T10:18:06.342+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543220286i1t4.departments with drop optime { ts: Timestamp(1543220286, 1), t: 4 } (notification optime: { ts: Timestamp(1543220286, 1), t: 4 })
+2018-11-26T10:18:09.710+0200 I COMMAND  [repl writer worker 15] CMD: drop pad-project.students
+2018-11-26T10:18:09.711+0200 I STORAGE  [repl writer worker 15] dropCollection: pad-project.students (acafc0dd-fb34-4e05-991e-7defcc31cd45) - renaming to drop-pending collection: pad-project.system.drop.1543220289i1t4.students with drop optime { ts: Timestamp(1543220289, 1), t: 4 }
+2018-11-26T10:18:09.724+0200 I REPL     [replication-1] Completing collection drop for pad-project.system.drop.1543220289i1t4.students with drop optime { ts: Timestamp(1543220289, 1), t: 4 } (notification optime: { ts: Timestamp(1543220289, 1), t: 4 })
+2018-11-26T10:18:09.724+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543220289i1t4.students with drop optime { ts: Timestamp(1543220289, 1), t: 4 } (notification optime: { ts: Timestamp(1543220289, 1), t: 4 })
+2018-11-26T10:18:09.725+0200 I STORAGE  [replication-1] Finishing collection drop for pad-project.system.drop.1543220289i1t4.students (acafc0dd-fb34-4e05-991e-7defcc31cd45).
+2018-11-26T10:18:29.810+0200 I NETWORK  [conn17] end connection 127.0.0.1:34642 (11 connections now open)
+2018-11-26T10:18:30.366+0200 I NETWORK  [conn18] end connection 127.0.0.1:34648 (10 connections now open)
+2018-11-26T10:18:42.438+0200 I NETWORK  [conn16] end connection 127.0.0.1:34634 (9 connections now open)
+2018-11-26T10:18:57.354+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:35034 #19 (10 connections now open)
+2018-11-26T10:18:57.378+0200 I NETWORK  [conn19] received client metadata from 127.0.0.1:35034 conn19: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:18:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:19:01.488+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:35040 #20 (11 connections now open)
+2018-11-26T10:19:01.512+0200 I NETWORK  [conn20] received client metadata from 127.0.0.1:35040 conn20: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:19:03.260+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:35046 #21 (12 connections now open)
+2018-11-26T10:19:03.286+0200 I NETWORK  [conn21] received client metadata from 127.0.0.1:35046 conn21: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:19:24.714+0200 I STORAGE  [repl writer worker 15] createCollection: pad-project.departments with provided UUID: ca1a2c6e-86e8-43f1-b01c-241f2e8a1ea3
+2018-11-26T10:19:34.349+0200 I STORAGE  [repl writer worker 4] createCollection: pad-project.students with provided UUID: b0ab4385-6bff-4cbf-a9f5-fc4df94e2678
+2018-11-26T10:20:07.444+0200 I NETWORK  [conn20] end connection 127.0.0.1:35040 (11 connections now open)
+2018-11-26T10:20:07.846+0200 I NETWORK  [conn21] end connection 127.0.0.1:35046 (10 connections now open)
+2018-11-26T10:20:10.711+0200 I NETWORK  [conn19] end connection 127.0.0.1:35034 (9 connections now open)
+2018-11-26T10:21:01.391+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:35178 #22 (10 connections now open)
+2018-11-26T10:21:01.411+0200 I NETWORK  [conn22] received client metadata from 127.0.0.1:35178 conn22: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:21:05.797+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:35184 #23 (11 connections now open)
+2018-11-26T10:21:05.822+0200 I NETWORK  [conn23] received client metadata from 127.0.0.1:35184 conn23: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:21:07.813+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:35190 #24 (12 connections now open)
+2018-11-26T10:21:07.839+0200 I NETWORK  [conn24] received client metadata from 127.0.0.1:35190 conn24: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:23:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:23:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:23:58.731+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:23:58.732+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:28:58.729+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:28:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:33:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:33:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:38:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:38:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:38:58.732+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:43:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:43:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:43:58.731+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:43:58.732+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:48:58.729+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:48:58.731+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:53:58.729+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:53:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:58:58.729+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:58:58.730+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:58:58.731+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:59:26.315+0200 I NETWORK  [conn22] end connection 127.0.0.1:35178 (11 connections now open)
+2018-11-26T10:59:26.319+0200 I NETWORK  [conn23] end connection 127.0.0.1:35184 (10 connections now open)
+2018-11-26T10:59:26.332+0200 I NETWORK  [conn24] end connection 127.0.0.1:35190 (9 connections now open)
+2018-11-26T10:59:31.023+0200 I NETWORK  [conn7] end connection 127.0.0.1:33860 (8 connections now open)
+2018-11-26T10:59:31.023+0200 I NETWORK  [conn6] end connection 127.0.0.1:33858 (7 connections now open)
+2018-11-26T10:59:39.158+0200 I NETWORK  [conn4] end connection 127.0.0.1:33666 (6 connections now open)
+2018-11-26T10:59:39.159+0200 I NETWORK  [conn5] end connection 127.0.0.1:33696 (5 connections now open)
+2018-11-26T10:59:44.233+0200 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2018-11-26T10:59:44.233+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-26T10:59:44.233+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+2018-11-26T10:59:44.233+0200 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-11-26T10:59:44.233+0200 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-11-26T10:59:44.233+0200 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27019: CallbackCanceled: Reporter no longer valid
+2018-11-26T10:59:44.233+0200 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-11-26T10:59:44.233+0200 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-11-26T10:59:44.233+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host localhost:27019 due to bad connection status; 1 connections to that host remain open
+2018-11-26T10:59:44.233+0200 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2018-11-26T10:59:44.234+0200 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-11-26T10:59:44.236+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-26T10:59:44.239+0200 I STORAGE  [WTOplogJournalThread] oplog journal thread loop shutting down
+2018-11-26T10:59:44.239+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-26T10:59:44.307+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-26T10:59:44.307+0200 I CONTROL  [signalProcessingThread] now exiting
+2018-11-26T10:59:44.307+0200 I CONTROL  [signalProcessingThread] shutting down with code:0

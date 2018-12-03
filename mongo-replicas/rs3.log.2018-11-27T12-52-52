@@ -1,0 +1,298 @@
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] MongoDB starting : pid=3503 port=27019 dbpath=rs3 64-bit host=staverPC
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] db version v3.6.8
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] modules: none
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten] build environment:
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-11-26T10:03:57.223+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-26T10:03:57.224+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-26T10:03:57.224+0200 I CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { replSet: "padRepl" }, storage: { dbPath: "rs3" }, systemLog: { destination: "file", path: "rs3.log" } }
+2018-11-26T10:03:57.225+0200 I -        [initandlisten] Detected data files in rs3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-11-26T10:03:57.225+0200 I STORAGE  [initandlisten] 
+2018-11-26T10:03:57.225+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-11-26T10:03:57.225+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-11-26T10:03:57.225+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3376M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-11-26T10:03:58.093+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:93061][3503:0x7f29bde759c0], txn-recover: Main recovery loop: starting at 3/1153792
+2018-11-26T10:03:58.311+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:311917][3503:0x7f29bde759c0], txn-recover: Recovering log 3 through 4
+2018-11-26T10:03:58.425+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:425894][3503:0x7f29bde759c0], txn-recover: Recovering log 4 through 4
+2018-11-26T10:03:58.530+0200 I STORAGE  [initandlisten] WiredTiger message [1543219438:530452][3503:0x7f29bde759c0], txn-recover: Set global recovery timestamp: 0
+2018-11-26T10:03:58.561+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-11-26T10:03:58.561+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 3380 records totaling to 376376 bytes
+2018-11-26T10:03:58.561+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] 
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] 
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-11-26T10:03:58.575+0200 I CONTROL  [initandlisten] 
+2018-11-26T10:03:58.608+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'rs3/diagnostic.data'
+2018-11-26T10:03:58.610+0200 I REPL     [initandlisten] Rollback ID is 1
+2018-11-26T10:03:58.611+0200 I REPL     [initandlisten] No oplog entries to apply for recovery. appliedThrough and checkpointTimestamp are both null.
+2018-11-26T10:03:58.612+0200 I NETWORK  [initandlisten] waiting for connections on port 27019
+2018-11-26T10:03:58.612+0200 W NETWORK  [replexec-0] Failed to connect to 127.0.0.1:27017, in(checking socket for error after poll), reason: Connection refused
+2018-11-26T10:03:58.612+0200 W NETWORK  [replexec-0] Failed to connect to 127.0.0.1:27018, in(checking socket for error after poll), reason: Connection refused
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] New replica set config in use: { _id: "padRepl", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node1" }, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node2" }, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node3" }, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] This node is localhost:27019 in the config
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2018-11-26T10:03:58.613+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] Starting replication storage threads
+2018-11-26T10:03:58.613+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] Starting replication fetcher thread
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] Starting replication applier thread
+2018-11-26T10:03:58.613+0200 I REPL     [replexec-0] Starting replication reporter thread
+2018-11-26T10:03:58.617+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T10:03:58.617+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54084 #1 (1 connection now open)
+2018-11-26T10:03:58.620+0200 W NETWORK  [LogicalSessionCacheRefresh] Failed to connect to 127.0.0.1:27017, in(checking socket for error after poll), reason: Connection refused
+2018-11-26T10:03:58.620+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: Connection refused
+2018-11-26T10:03:58.620+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27017 due to failed operation on a connection
+2018-11-26T10:03:58.620+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: Connection refused
+2018-11-26T10:03:58.620+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27018 due to failed operation on a connection
+2018-11-26T10:03:58.620+0200 I REPL_HB  [replexec-1] Error in heartbeat (requestId: 1) to localhost:27017, response status: HostUnreachable: Connection refused
+2018-11-26T10:03:58.620+0200 I REPL_HB  [replexec-1] Error in heartbeat (requestId: 3) to localhost:27018, response status: HostUnreachable: Connection refused
+2018-11-26T10:03:58.620+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:03:58.620+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27017 due to failed operation on a connection
+2018-11-26T10:03:58.621+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Failed to connect to 127.0.0.1:27018, in(checking socket for error after poll), reason: Connection refused
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27018 due to failed operation on a connection
+2018-11-26T10:03:58.621+0200 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2018-11-26T10:03:58.621+0200 I REPL_HB  [replexec-0] Error in heartbeat (requestId: 5) to localhost:27017, response status: HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:03:58.621+0200 I REPL_HB  [replexec-1] Error in heartbeat (requestId: 7) to localhost:27018, response status: HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27017 due to failed operation on a connection
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27018 due to failed operation on a connection
+2018-11-26T10:03:58.621+0200 I REPL_HB  [replexec-0] Error in heartbeat (requestId: 9) to localhost:27017, response status: HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I REPL     [replexec-0] Member localhost:27017 is now in state RS_DOWN
+2018-11-26T10:03:58.621+0200 I REPL_HB  [replexec-0] Error in heartbeat (requestId: 11) to localhost:27018, response status: HostUnreachable: Connection refused
+2018-11-26T10:03:58.621+0200 I REPL     [replexec-0] Member localhost:27018 is now in state RS_DOWN
+2018-11-26T10:03:58.621+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:54084 conn1: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:03:58.622+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 5 second timeout)
+2018-11-26T10:03:58.626+0200 W NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Unable to reach primary for set padRepl
+2018-11-26T10:03:58.724+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54106 #2 (2 connections now open)
+2018-11-26T10:03:58.725+0200 I NETWORK  [conn2] end connection 127.0.0.1:54106 (1 connection now open)
+2018-11-26T10:03:58.725+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54110 #3 (2 connections now open)
+2018-11-26T10:03:58.726+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:54110 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:03:58.730+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54118 #4 (3 connections now open)
+2018-11-26T10:03:58.730+0200 I NETWORK  [conn4] end connection 127.0.0.1:54118 (2 connections now open)
+2018-11-26T10:03:58.731+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54122 #5 (3 connections now open)
+2018-11-26T10:03:58.731+0200 I NETWORK  [conn5] received client metadata from 127.0.0.1:54122 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:03:59.122+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:03:59.122+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:03:59.123+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 1ms (1 connections now open to localhost:27017)
+2018-11-26T10:03:59.123+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27018, took 1ms (1 connections now open to localhost:27018)
+2018-11-26T10:03:59.124+0200 I REPL     [replexec-1] Member localhost:27017 is now in state SECONDARY
+2018-11-26T10:03:59.124+0200 I REPL     [replexec-0] Member localhost:27018 is now in state SECONDARY
+2018-11-26T10:03:59.128+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27018 (1 connections now open to localhost:27018 with a 5 second timeout)
+2018-11-26T10:03:59.128+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27017 (1 connections now open to localhost:27017 with a 5 second timeout)
+2018-11-26T10:03:59.128+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:03:59.630+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:00.131+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:00.632+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:01.133+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:01.634+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:02.135+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:02.637+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:03.138+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:03.216+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54136 #6 (4 connections now open)
+2018-11-26T10:04:03.640+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:04.142+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:04.643+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:05.145+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:05.646+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:06.148+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:06.650+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:07.151+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:07.653+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:08.155+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:08.656+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:09.068+0200 I REPL     [replexec-2] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2018-11-26T10:04:09.068+0200 I REPL     [replexec-2] conducting a dry run election to see if we could be elected. current term: 3
+2018-11-26T10:04:09.069+0200 I REPL     [replexec-0] VoteRequester(term 3 dry run) received a yes vote from localhost:27017; response message: { term: 3, voteGranted: true, reason: "", ok: 1.0, operationTime: Timestamp(1543191612, 1), $clusterTime: { clusterTime: Timestamp(1543191612, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } } }
+2018-11-26T10:04:09.069+0200 I REPL     [replexec-2] dry election run succeeded, running for election in term 4
+2018-11-26T10:04:09.074+0200 I REPL     [replexec-0] VoteRequester(term 4) received a yes vote from localhost:27018; response message: { term: 4, voteGranted: true, reason: "", ok: 1.0, operationTime: Timestamp(1543191612, 1), $clusterTime: { clusterTime: Timestamp(1543191612, 1), signature: { hash: BinData(0, 0000000000000000000000000000000000000000), keyId: 0 } } }
+2018-11-26T10:04:09.074+0200 I REPL     [replexec-0] election succeeded, assuming primary role in term 4
+2018-11-26T10:04:09.074+0200 I REPL     [replexec-0] transition to PRIMARY from SECONDARY
+2018-11-26T10:04:09.074+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Ending connection to host localhost:27017 due to bad connection status; 0 connections to that host remain open
+2018-11-26T10:04:09.074+0200 I REPL     [replexec-0] Resetting sync source to empty, which was :27017
+2018-11-26T10:04:09.075+0200 I REPL     [replexec-0] Entering primary catch-up mode.
+2018-11-26T10:04:09.075+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:04:09.076+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 1ms (1 connections now open to localhost:27017)
+2018-11-26T10:04:09.077+0200 I REPL     [replexec-2] Caught up to the latest optime known via heartbeats after becoming primary.
+2018-11-26T10:04:09.077+0200 I REPL     [replexec-2] Exited primary catch-up mode.
+2018-11-26T10:04:09.158+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:09.660+0200 W NETWORK  [LogicalSessionCacheReap] Unable to reach primary for set padRepl
+2018-11-26T10:04:10.160+0200 W NETWORK  [LogicalSessionCacheRefresh] Unable to reach primary for set padRepl
+2018-11-26T10:04:10.625+0200 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2018-11-26T10:04:10.662+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54142 #7 (5 connections now open)
+2018-11-26T10:04:10.663+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54144 #8 (6 connections now open)
+2018-11-26T10:04:10.664+0200 I NETWORK  [conn7] received client metadata from 127.0.0.1:54142 conn7: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:10.664+0200 I NETWORK  [conn8] received client metadata from 127.0.0.1:54144 conn8: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:10.665+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 0 second timeout)
+2018-11-26T10:04:10.665+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27019 (2 connections now open to localhost:27019 with a 0 second timeout)
+2018-11-26T10:04:11.730+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54146 #9 (7 connections now open)
+2018-11-26T10:04:11.730+0200 I NETWORK  [conn9] received client metadata from 127.0.0.1:54146 conn9: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:11.731+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54148 #10 (8 connections now open)
+2018-11-26T10:04:11.732+0200 I NETWORK  [conn10] received client metadata from 127.0.0.1:54148 conn10: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:11.736+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54150 #11 (9 connections now open)
+2018-11-26T10:04:11.736+0200 I NETWORK  [conn11] received client metadata from 127.0.0.1:54150 conn11: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:11.737+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54152 #12 (10 connections now open)
+2018-11-26T10:04:11.737+0200 I NETWORK  [conn12] received client metadata from 127.0.0.1:54152 conn12: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:04:18.223+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54166 #13 (11 connections now open)
+2018-11-26T10:06:55.633+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54336 #14 (12 connections now open)
+2018-11-26T10:06:55.634+0200 I NETWORK  [conn14] received client metadata from 127.0.0.1:54336 conn14: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:06:55.681+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54338 #15 (13 connections now open)
+2018-11-26T10:06:55.681+0200 I NETWORK  [conn15] received client metadata from 127.0.0.1:54338 conn15: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:07:19.691+0200 I COMMAND  [conn14] CMD: drop pad-project.departments
+2018-11-26T10:07:19.691+0200 I STORAGE  [conn14] dropCollection: pad-project.departments (b560d296-a993-490c-8e57-5e1ea4f5d031) - renaming to drop-pending collection: pad-project.system.drop.1543219639i1t4.departments with drop optime { ts: Timestamp(1543219639, 1), t: 4 }
+2018-11-26T10:07:19.711+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543219639i1t4.departments with drop optime { ts: Timestamp(1543219639, 1), t: 4 } (notification optime: { ts: Timestamp(1543219639, 1), t: 4 })
+2018-11-26T10:07:19.712+0200 I STORAGE  [replication-0] Finishing collection drop for pad-project.system.drop.1543219639i1t4.departments (b560d296-a993-490c-8e57-5e1ea4f5d031).
+2018-11-26T10:07:23.220+0200 I COMMAND  [conn14] CMD: drop pad-project.students
+2018-11-26T10:07:23.220+0200 I STORAGE  [conn14] dropCollection: pad-project.students (f9777e9d-9866-4cb5-b72e-1d5ad1b3cc33) - renaming to drop-pending collection: pad-project.system.drop.1543219643i1t4.students with drop optime { ts: Timestamp(1543219643, 1), t: 4 }
+2018-11-26T10:07:23.242+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543219643i1t4.students with drop optime { ts: Timestamp(1543219643, 1), t: 4 } (notification optime: { ts: Timestamp(1543219643, 1), t: 4 })
+2018-11-26T10:07:23.242+0200 I STORAGE  [replication-0] Finishing collection drop for pad-project.system.drop.1543219643i1t4.students (f9777e9d-9866-4cb5-b72e-1d5ad1b3cc33).
+2018-11-26T10:07:56.420+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54440 #16 (14 connections now open)
+2018-11-26T10:07:56.433+0200 I NETWORK  [conn16] received client metadata from 127.0.0.1:54440 conn16: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:00.786+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54452 #17 (15 connections now open)
+2018-11-26T10:08:00.800+0200 I NETWORK  [conn17] received client metadata from 127.0.0.1:54452 conn17: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:03.297+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54458 #18 (16 connections now open)
+2018-11-26T10:08:03.304+0200 I NETWORK  [conn18] received client metadata from 127.0.0.1:54458 conn18: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:23.903+0200 I NETWORK  [conn16] end connection 127.0.0.1:54440 (15 connections now open)
+2018-11-26T10:08:26.653+0200 I NETWORK  [conn18] end connection 127.0.0.1:54458 (14 connections now open)
+2018-11-26T10:08:26.967+0200 I NETWORK  [conn17] end connection 127.0.0.1:54452 (13 connections now open)
+2018-11-26T10:08:45.339+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54578 #19 (14 connections now open)
+2018-11-26T10:08:45.346+0200 I NETWORK  [conn19] received client metadata from 127.0.0.1:54578 conn19: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:53.496+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54592 #20 (15 connections now open)
+2018-11-26T10:08:53.511+0200 I NETWORK  [conn20] received client metadata from 127.0.0.1:54592 conn20: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:08:58.725+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54596 #21 (16 connections now open)
+2018-11-26T10:08:58.725+0200 I NETWORK  [conn21] received client metadata from 127.0.0.1:54596 conn21: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.727+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54600 #22 (17 connections now open)
+2018-11-26T10:08:58.727+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54602 #23 (18 connections now open)
+2018-11-26T10:08:58.727+0200 I NETWORK  [conn22] received client metadata from 127.0.0.1:54600 conn22: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.728+0200 I NETWORK  [conn23] received client metadata from 127.0.0.1:54602 conn23: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.730+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54606 #24 (19 connections now open)
+2018-11-26T10:08:58.731+0200 I NETWORK  [conn24] received client metadata from 127.0.0.1:54606 conn24: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.732+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54610 #25 (20 connections now open)
+2018-11-26T10:08:58.732+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54612 #26 (21 connections now open)
+2018-11-26T10:08:58.733+0200 I NETWORK  [conn25] received client metadata from 127.0.0.1:54610 conn25: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:08:58.733+0200 I NETWORK  [conn26] received client metadata from 127.0.0.1:54612 conn26: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:09:00.369+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:54618 #27 (22 connections now open)
+2018-11-26T10:09:00.377+0200 I NETWORK  [conn27] received client metadata from 127.0.0.1:54618 conn27: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:10:24.292+0200 I NETWORK  [conn19] end connection 127.0.0.1:54578 (21 connections now open)
+2018-11-26T10:10:28.620+0200 I NETWORK  [conn20] end connection 127.0.0.1:54592 (20 connections now open)
+2018-11-26T10:10:30.671+0200 I NETWORK  [conn27] end connection 127.0.0.1:54618 (19 connections now open)
+2018-11-26T10:14:19.839+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55108 #28 (20 connections now open)
+2018-11-26T10:14:19.854+0200 I NETWORK  [conn28] received client metadata from 127.0.0.1:55108 conn28: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:14:24.579+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55116 #29 (21 connections now open)
+2018-11-26T10:14:24.586+0200 I NETWORK  [conn29] received client metadata from 127.0.0.1:55116 conn29: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:14:30.270+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55122 #30 (22 connections now open)
+2018-11-26T10:14:30.286+0200 I NETWORK  [conn30] received client metadata from 127.0.0.1:55122 conn30: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:14:51.694+0200 I STORAGE  [conn28] createCollection: pad-project.departments with generated UUID: 9ca295bd-2fd0-48ae-a0d1-13f34cffb9ab
+2018-11-26T10:15:06.105+0200 I STORAGE  [conn28] createCollection: pad-project.students with generated UUID: acafc0dd-fb34-4e05-991e-7defcc31cd45
+2018-11-26T10:18:06.314+0200 I COMMAND  [conn14] CMD: drop pad-project.departments
+2018-11-26T10:18:06.315+0200 I STORAGE  [conn14] dropCollection: pad-project.departments (9ca295bd-2fd0-48ae-a0d1-13f34cffb9ab) - renaming to drop-pending collection: pad-project.system.drop.1543220286i1t4.departments with drop optime { ts: Timestamp(1543220286, 1), t: 4 }
+2018-11-26T10:18:06.338+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543220286i1t4.departments with drop optime { ts: Timestamp(1543220286, 1), t: 4 } (notification optime: { ts: Timestamp(1543220286, 1), t: 4 })
+2018-11-26T10:18:06.338+0200 I STORAGE  [replication-0] Finishing collection drop for pad-project.system.drop.1543220286i1t4.departments (9ca295bd-2fd0-48ae-a0d1-13f34cffb9ab).
+2018-11-26T10:18:09.701+0200 I COMMAND  [conn14] CMD: drop pad-project.students
+2018-11-26T10:18:09.701+0200 I STORAGE  [conn14] dropCollection: pad-project.students (acafc0dd-fb34-4e05-991e-7defcc31cd45) - renaming to drop-pending collection: pad-project.system.drop.1543220289i1t4.students with drop optime { ts: Timestamp(1543220289, 1), t: 4 }
+2018-11-26T10:18:09.723+0200 I REPL     [replication-0] Completing collection drop for pad-project.system.drop.1543220289i1t4.students with drop optime { ts: Timestamp(1543220289, 1), t: 4 } (notification optime: { ts: Timestamp(1543220289, 1), t: 4 })
+2018-11-26T10:18:09.723+0200 I STORAGE  [replication-0] Finishing collection drop for pad-project.system.drop.1543220289i1t4.students (acafc0dd-fb34-4e05-991e-7defcc31cd45).
+2018-11-26T10:18:29.810+0200 I NETWORK  [conn29] end connection 127.0.0.1:55116 (21 connections now open)
+2018-11-26T10:18:30.365+0200 I NETWORK  [conn30] end connection 127.0.0.1:55122 (20 connections now open)
+2018-11-26T10:18:42.438+0200 I NETWORK  [conn28] end connection 127.0.0.1:55108 (19 connections now open)
+2018-11-26T10:18:57.373+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55508 #31 (20 connections now open)
+2018-11-26T10:18:57.382+0200 I NETWORK  [conn31] received client metadata from 127.0.0.1:55508 conn31: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:19:01.507+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55514 #32 (21 connections now open)
+2018-11-26T10:19:01.519+0200 I NETWORK  [conn32] received client metadata from 127.0.0.1:55514 conn32: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:19:03.282+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55520 #33 (22 connections now open)
+2018-11-26T10:19:03.290+0200 I NETWORK  [conn33] received client metadata from 127.0.0.1:55520 conn33: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:19:24.690+0200 I STORAGE  [conn32] createCollection: pad-project.departments with generated UUID: ca1a2c6e-86e8-43f1-b01c-241f2e8a1ea3
+2018-11-26T10:19:34.318+0200 I STORAGE  [conn32] createCollection: pad-project.students with generated UUID: b0ab4385-6bff-4cbf-a9f5-fc4df94e2678
+2018-11-26T10:19:57.237+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55572 #34 (23 connections now open)
+2018-11-26T10:19:57.237+0200 I NETWORK  [conn34] received client metadata from 127.0.0.1:55572 conn34: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:19:57.280+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55574 #35 (24 connections now open)
+2018-11-26T10:19:57.280+0200 I NETWORK  [conn35] received client metadata from 127.0.0.1:55574 conn35: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-26T10:20:07.444+0200 I NETWORK  [conn32] end connection 127.0.0.1:55514 (23 connections now open)
+2018-11-26T10:20:07.847+0200 I NETWORK  [conn33] end connection 127.0.0.1:55520 (22 connections now open)
+2018-11-26T10:20:10.711+0200 I NETWORK  [conn31] end connection 127.0.0.1:55508 (21 connections now open)
+2018-11-26T10:21:01.391+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55652 #36 (22 connections now open)
+2018-11-26T10:21:01.411+0200 I NETWORK  [conn36] received client metadata from 127.0.0.1:55652 conn36: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:21:05.812+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55658 #37 (23 connections now open)
+2018-11-26T10:21:05.838+0200 I NETWORK  [conn37] received client metadata from 127.0.0.1:55658 conn37: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:21:07.829+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:55664 #38 (24 connections now open)
+2018-11-26T10:21:07.845+0200 I NETWORK  [conn38] received client metadata from 127.0.0.1:55664 conn38: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-26T10:59:26.315+0200 I NETWORK  [conn36] end connection 127.0.0.1:55652 (23 connections now open)
+2018-11-26T10:59:26.319+0200 I NETWORK  [conn37] end connection 127.0.0.1:55658 (22 connections now open)
+2018-11-26T10:59:26.330+0200 I NETWORK  [conn38] end connection 127.0.0.1:55664 (21 connections now open)
+2018-11-26T10:59:30.964+0200 I NETWORK  [conn34] end connection 127.0.0.1:55572 (20 connections now open)
+2018-11-26T10:59:30.967+0200 I NETWORK  [conn35] end connection 127.0.0.1:55574 (19 connections now open)
+2018-11-26T10:59:31.023+0200 I NETWORK  [conn15] end connection 127.0.0.1:54338 (18 connections now open)
+2018-11-26T10:59:31.023+0200 I NETWORK  [conn14] end connection 127.0.0.1:54336 (17 connections now open)
+2018-11-26T10:59:39.158+0200 I NETWORK  [conn13] end connection 127.0.0.1:54166 (16 connections now open)
+2018-11-26T10:59:39.159+0200 I NETWORK  [conn6] end connection 127.0.0.1:54136 (15 connections now open)
+2018-11-26T10:59:44.187+0200 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-11-26T10:59:44.187+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-26T10:59:44.187+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27019.sock
+2018-11-26T10:59:44.187+0200 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-11-26T10:59:44.187+0200 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-11-26T10:59:44.187+0200 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-11-26T10:59:44.187+0200 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-11-26T10:59:44.310+0200 I NETWORK  [conn25] end connection 127.0.0.1:54610 (13 connections now open)
+2018-11-26T10:59:44.310+0200 I NETWORK  [conn26] end connection 127.0.0.1:54612 (14 connections now open)
+2018-11-26T10:59:44.310+0200 I NETWORK  [conn24] end connection 127.0.0.1:54606 (12 connections now open)
+2018-11-26T10:59:44.310+0200 I NETWORK  [conn5] end connection 127.0.0.1:54122 (11 connections now open)
+2018-11-26T10:59:44.310+0200 I NETWORK  [conn12] end connection 127.0.0.1:54152 (10 connections now open)
+2018-11-26T10:59:44.314+0200 I NETWORK  [conn23] end connection 127.0.0.1:54602 (9 connections now open)
+2018-11-26T10:59:44.314+0200 I NETWORK  [conn22] end connection 127.0.0.1:54600 (8 connections now open)
+2018-11-26T10:59:44.314+0200 I NETWORK  [conn21] end connection 127.0.0.1:54596 (7 connections now open)
+2018-11-26T10:59:44.314+0200 I NETWORK  [conn10] end connection 127.0.0.1:54148 (6 connections now open)
+2018-11-26T10:59:44.314+0200 I NETWORK  [conn3] end connection 127.0.0.1:54110 (5 connections now open)
+2018-11-26T10:59:44.932+0200 I ASIO     [replexec-51] dropping unhealthy pooled connection to localhost:27017
+2018-11-26T10:59:44.932+0200 I ASIO     [replexec-51] after drop, pool was empty, going to spawn some connections
+2018-11-26T10:59:44.932+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:59:44.932+0200 I ASIO     [replexec-54] dropping unhealthy pooled connection to localhost:27018
+2018-11-26T10:59:44.932+0200 I ASIO     [replexec-54] after drop, pool was empty, going to spawn some connections
+2018-11-26T10:59:44.933+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:59:44.933+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: Connection refused
+2018-11-26T10:59:44.933+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27017 due to failed operation on a connection
+2018-11-26T10:59:44.933+0200 I REPL_HB  [replexec-46] Error in heartbeat (requestId: 6772) to localhost:27017, response status: HostUnreachable: Connection refused
+2018-11-26T10:59:44.933+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: Connection refused
+2018-11-26T10:59:44.933+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27018 due to failed operation on a connection
+2018-11-26T10:59:44.933+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:59:44.933+0200 I REPL_HB  [replexec-54] Error in heartbeat (requestId: 6774) to localhost:27018, response status: HostUnreachable: Connection refused
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: Connection refused
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27017 due to failed operation on a connection
+2018-11-26T10:59:44.934+0200 I REPL_HB  [replexec-46] Error in heartbeat (requestId: 6776) to localhost:27017, response status: HostUnreachable: Connection refused
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: Connection refused
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27018 due to failed operation on a connection
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-26T10:59:44.934+0200 I REPL_HB  [replexec-51] Error in heartbeat (requestId: 6778) to localhost:27018, response status: HostUnreachable: Connection refused
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27017 - HostUnreachable: Connection refused
+2018-11-26T10:59:44.934+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27017 due to failed operation on a connection
+2018-11-26T10:59:44.935+0200 I REPL_HB  [replexec-46] Error in heartbeat (requestId: 6780) to localhost:27017, response status: HostUnreachable: Connection refused
+2018-11-26T10:59:44.935+0200 I REPL     [replexec-46] Member localhost:27017 is now in state RS_DOWN
+2018-11-26T10:59:44.935+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27018 - HostUnreachable: Connection refused
+2018-11-26T10:59:44.935+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Dropping all pooled connections to localhost:27018 due to failed operation on a connection
+2018-11-26T10:59:44.935+0200 I REPL_HB  [replexec-54] Error in heartbeat (requestId: 6782) to localhost:27018, response status: HostUnreachable: Connection refused
+2018-11-26T10:59:44.935+0200 I REPL     [replexec-54] Member localhost:27018 is now in state RS_DOWN
+2018-11-26T10:59:45.065+0200 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-11-26T10:59:45.066+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-26T10:59:45.074+0200 I STORAGE  [WTOplogJournalThread] oplog journal thread loop shutting down
+2018-11-26T10:59:45.075+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-26T10:59:45.107+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-26T10:59:45.108+0200 I CONTROL  [signalProcessingThread] now exiting
+2018-11-26T10:59:45.108+0200 I CONTROL  [signalProcessingThread] shutting down with code:0

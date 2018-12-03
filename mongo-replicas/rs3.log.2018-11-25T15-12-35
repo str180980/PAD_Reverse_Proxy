@@ -1,0 +1,163 @@
+2018-11-24T22:42:19.999+0200 I CONTROL  [initandlisten] MongoDB starting : pid=18269 port=27019 dbpath=rs3 64-bit host=staverPC
+2018-11-24T22:42:19.999+0200 I CONTROL  [initandlisten] db version v3.6.8
+2018-11-24T22:42:19.999+0200 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2018-11-24T22:42:19.999+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-11-24T22:42:20.000+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-24T22:42:20.000+0200 I CONTROL  [initandlisten] modules: none
+2018-11-24T22:42:20.000+0200 I CONTROL  [initandlisten] build environment:
+2018-11-24T22:42:20.003+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-11-24T22:42:20.003+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-24T22:42:20.003+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-24T22:42:20.003+0200 I CONTROL  [initandlisten] options: { net: { port: 27019 }, replication: { replSet: "padRepl" }, storage: { dbPath: "rs3" }, systemLog: { destination: "file", path: "rs3.log" } }
+2018-11-24T22:42:20.004+0200 I STORAGE  [initandlisten] 
+2018-11-24T22:42:20.004+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-11-24T22:42:20.004+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-11-24T22:42:20.004+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3376M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-11-24T22:42:20.495+0200 I STORAGE  [initandlisten] WiredTiger message [1543092140:495551][18269:0x7f1f33b709c0], txn-recover: Set global recovery timestamp: 0
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] 
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] 
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-11-24T22:42:20.542+0200 I CONTROL  [initandlisten] 
+2018-11-24T22:42:20.550+0200 I STORAGE  [initandlisten] createCollection: local.startup_log with no UUID.
+2018-11-24T22:42:20.571+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'rs3/diagnostic.data'
+2018-11-24T22:42:20.571+0200 I STORAGE  [initandlisten] createCollection: local.me with no UUID.
+2018-11-24T22:42:20.591+0200 I STORAGE  [initandlisten] createCollection: local.replset.minvalid with no UUID.
+2018-11-24T22:42:20.611+0200 I REPL     [initandlisten] Did not find local voted for document at startup.
+2018-11-24T22:42:20.611+0200 I REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2018-11-24T22:42:20.611+0200 I STORAGE  [initandlisten] createCollection: local.system.rollback.id with no UUID.
+2018-11-24T22:42:20.631+0200 I REPL     [initandlisten] Initialized the rollback ID to 1
+2018-11-24T22:42:20.631+0200 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2018-11-24T22:42:20.632+0200 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Can not create config.system.sessions collection
+2018-11-24T22:42:20.632+0200 I NETWORK  [initandlisten] waiting for connections on port 27019
+2018-11-24T22:43:35.037+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41158 #1 (1 connection now open)
+2018-11-24T22:43:35.037+0200 I NETWORK  [conn1] end connection 127.0.0.1:41158 (0 connections now open)
+2018-11-24T22:43:35.040+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41162 #2 (1 connection now open)
+2018-11-24T22:43:35.040+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:41162 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:43:35.041+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-24T22:43:35.043+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 2ms (1 connections now open to localhost:27017)
+2018-11-24T22:43:37.049+0200 I STORAGE  [replexec-1] createCollection: local.system.replset with no UUID.
+2018-11-24T22:43:37.051+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41174 #3 (2 connections now open)
+2018-11-24T22:43:37.051+0200 I NETWORK  [conn3] end connection 127.0.0.1:41174 (1 connection now open)
+2018-11-24T22:43:37.076+0200 I REPL     [replexec-1] New replica set config in use: { _id: "padRepl", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-24T22:43:37.076+0200 I REPL     [replexec-1] This node is localhost:27019 in the config
+2018-11-24T22:43:37.077+0200 I REPL     [replexec-1] transition to STARTUP2 from STARTUP
+2018-11-24T22:43:37.077+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27018
+2018-11-24T22:43:37.077+0200 I REPL     [replexec-1] Starting replication storage threads
+2018-11-24T22:43:37.078+0200 I REPL     [replexec-3] Member localhost:27017 is now in state SECONDARY
+2018-11-24T22:43:37.079+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27018, took 2ms (1 connections now open to localhost:27018)
+2018-11-24T22:43:37.080+0200 I REPL     [replexec-0] Member localhost:27018 is now in state STARTUP2
+2018-11-24T22:43:37.080+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41178 #4 (2 connections now open)
+2018-11-24T22:43:37.080+0200 I STORAGE  [replexec-1] createCollection: local.temp_oplog_buffer with no UUID.
+2018-11-24T22:43:37.080+0200 I NETWORK  [conn4] received client metadata from 127.0.0.1:41178 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:43:37.107+0200 I REPL     [replication-0] Starting initial sync (attempt 1 of 10)
+2018-11-24T22:43:37.107+0200 I STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (no UUID).
+2018-11-24T22:43:37.110+0200 I STORAGE  [replication-0] createCollection: local.temp_oplog_buffer with no UUID.
+2018-11-24T22:43:37.134+0200 I REPL     [replication-0] sync source candidate: localhost:27017
+2018-11-24T22:43:37.134+0200 I REPL     [replication-0] ******
+2018-11-24T22:43:37.134+0200 I REPL     [replication-0] creating replication oplog of size: 2738MB...
+2018-11-24T22:43:37.134+0200 I STORAGE  [replication-0] createCollection: local.oplog.rs with no UUID.
+2018-11-24T22:43:37.147+0200 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-11-24T22:43:37.147+0200 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2018-11-24T22:43:37.147+0200 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2018-11-24T22:43:37.186+0200 I REPL     [replication-0] ******
+2018-11-24T22:43:37.186+0200 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2018-11-24T22:43:37.187+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2018-11-24T22:43:37.188+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1ms (1 connections now open to localhost:27017)
+2018-11-24T22:43:37.191+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2018-11-24T22:43:37.192+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 1ms (2 connections now open to localhost:27017)
+2018-11-24T22:43:37.194+0200 I REPL     [replication-0] CollectionCloner::start called, on ns:admin.system.version
+2018-11-24T22:43:37.195+0200 I STORAGE  [repl writer worker 0] createCollection: admin.system.version with provided UUID: 4ab50442-12e9-4d6e-a256-895cae9628d0
+2018-11-24T22:43:37.220+0200 I INDEX    [repl writer worker 0] build index on: admin.system.version properties: { v: 2, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2018-11-24T22:43:37.220+0200 I INDEX    [repl writer worker 0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-11-24T22:43:37.222+0200 I COMMAND  [repl writer worker 10] setting featureCompatibilityVersion to 3.6
+2018-11-24T22:43:37.222+0200 I NETWORK  [repl writer worker 10] Skip closing connection for connection # 4
+2018-11-24T22:43:37.222+0200 I NETWORK  [repl writer worker 10] Skip closing connection for connection # 2
+2018-11-24T22:43:37.222+0200 I REPL     [repl writer worker 10] CollectionCloner ns:admin.system.version finished cloning with status: OK
+2018-11-24T22:43:37.228+0200 I REPL     [repl writer worker 10] Finished cloning data: OK. Beginning oplog replay.
+2018-11-24T22:43:37.229+0200 I REPL     [replication-0] No need to apply operations. (currently at { : Timestamp(1543092215, 1) })
+2018-11-24T22:43:37.229+0200 I COMMAND  [replication-1] Assigning UUID 22b7082d-a0ee-42b3-8213-4baed6cfb5cc to collection local.system.rollback.id
+2018-11-24T22:43:37.230+0200 I COMMAND  [replication-1] Assigning UUID 9fefb923-df58-4d95-a035-d161759a8e3c to collection local.temp_oplog_buffer
+2018-11-24T22:43:37.230+0200 I COMMAND  [replication-1] Assigning UUID ce6e7304-274e-4e66-9ac0-039d177cb6e8 to collection local.system.replset
+2018-11-24T22:43:37.230+0200 I COMMAND  [replication-1] Assigning UUID 186906a5-b3a6-4923-a225-ffc291b911ab to collection local.me
+2018-11-24T22:43:37.230+0200 I COMMAND  [replication-1] Assigning UUID f3d41743-dfb7-46a5-a0bb-b7faf18e417b to collection local.startup_log
+2018-11-24T22:43:37.230+0200 I COMMAND  [replication-1] Assigning UUID 0d5fbab4-039b-4cfa-b7fd-f21129c442a7 to collection local.replset.minvalid
+2018-11-24T22:43:37.230+0200 I COMMAND  [replication-1] Assigning UUID ed209b7a-383a-4c75-98bc-411830c55688 to collection local.oplog.rs
+2018-11-24T22:43:37.230+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host localhost:27017 due to bad connection status; 1 connections to that host remain open
+2018-11-24T22:43:37.230+0200 I REPL     [replication-0] Finished fetching oplog during initial sync: CallbackCanceled: error in fetcher batch callback: oplog fetcher is shutting down. Last fetched optime and hash: { ts: Timestamp(0, 0), t: -1 }[0]
+2018-11-24T22:43:37.231+0200 I REPL     [replication-0] Initial sync attempt finishing up.
+2018-11-24T22:43:37.231+0200 I REPL     [replication-0] Initial Sync Attempt Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1543092217106), initialSyncAttempts: [], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp(1543092215, 1), initialSyncOplogEnd: Timestamp(1543092215, 1), databases: { databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1543092217191), end: new Date(1543092217228), elapsedMillis: 37, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 1, fetchedBatches: 1, start: new Date(1543092217194), end: new Date(1543092217228), elapsedMillis: 34 } } } }
+2018-11-24T22:43:37.231+0200 I STORAGE  [replication-0] Finishing collection drop for local.temp_oplog_buffer (9fefb923-df58-4d95-a035-d161759a8e3c).
+2018-11-24T22:43:37.330+0200 I REPL     [replication-0] initial sync done; took 0s.
+2018-11-24T22:43:37.331+0200 I REPL     [replication-0] transition to RECOVERING from STARTUP2
+2018-11-24T22:43:37.331+0200 I REPL     [replication-0] Starting replication fetcher thread
+2018-11-24T22:43:37.331+0200 I REPL     [replication-0] Starting replication applier thread
+2018-11-24T22:43:37.331+0200 I REPL     [replication-0] Starting replication reporter thread
+2018-11-24T22:43:37.331+0200 I REPL     [rsBackgroundSync] could not find member to sync from
+2018-11-24T22:43:37.332+0200 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2018-11-24T22:43:37.332+0200 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2018-11-24T22:43:37.332+0200 I REPL     [replexec-0] Member localhost:27018 is now in state RECOVERING
+2018-11-24T22:43:37.833+0200 I REPL     [replexec-0] Member localhost:27018 is now in state SECONDARY
+2018-11-24T22:43:45.762+0200 I STORAGE  [conn2] createCollection: local.replset.election with generated UUID: a5cdb724-7f0c-40ac-b82a-4ca842ca9262
+2018-11-24T22:43:45.847+0200 I REPL     [replexec-2] Member localhost:27017 is now in state PRIMARY
+2018-11-24T22:43:48.339+0200 I REPL     [rsBackgroundSync] sync source candidate: localhost:27017
+2018-11-24T22:43:48.348+0200 I REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27017
+2018-11-24T22:43:48.348+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27017
+2018-11-24T22:43:48.351+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27017, took 3ms (2 connections now open to localhost:27017)
+2018-11-24T22:43:48.353+0200 I STORAGE  [rsSync] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: eda57b75-9d08-4910-99e6-fa8744105e87
+2018-11-24T22:43:48.615+0200 I STORAGE  [repl writer worker 3] createCollection: config.transactions with provided UUID: 278dac41-6747-4f3b-b6a6-ce6ef12878ec
+2018-11-24T22:43:48.988+0200 I STORAGE  [repl writer worker 5] createCollection: admin.system.keys with provided UUID: ee0592df-424a-4fd9-8037-6d3432194f09
+2018-11-24T22:46:13.507+0200 I STORAGE  [repl writer worker 5] createCollection: config.system.sessions with provided UUID: 83a70489-a0c9-418a-85c7-5ad72a51cdaa
+2018-11-24T22:46:13.556+0200 I INDEX    [repl writer worker 8] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800, ns: "config.system.sessions" }
+2018-11-24T22:46:13.556+0200 I INDEX    [repl writer worker 8] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-11-24T22:46:13.560+0200 I INDEX    [repl writer worker 8] build index done.  scanned 0 total records. 0 secs
+2018-11-24T22:46:55.289+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41338 #5 (3 connections now open)
+2018-11-24T22:46:55.290+0200 I NETWORK  [conn5] received client metadata from 127.0.0.1:41338 conn5: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:47:20.632+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-24T22:47:20.633+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41358 #6 (4 connections now open)
+2018-11-24T22:47:20.634+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27018 (1 connections now open to localhost:27018 with a 5 second timeout)
+2018-11-24T22:47:20.634+0200 I NETWORK  [ReplicaSetMonitor-TaskExecutor-0] Successfully connected to localhost:27017 (1 connections now open to localhost:27017 with a 5 second timeout)
+2018-11-24T22:47:20.634+0200 I NETWORK  [conn6] received client metadata from 127.0.0.1:41358 conn6: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:47:20.634+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 5 second timeout)
+2018-11-24T22:47:20.636+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27017 (1 connections now open to localhost:27017 with a 0 second timeout)
+2018-11-24T22:47:20.636+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27017 (2 connections now open to localhost:27017 with a 0 second timeout)
+2018-11-24T22:47:20.636+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-24T22:50:33.247+0200 I STORAGE  [repl writer worker 11] createCollection: book.temp with provided UUID: 22cfc64d-5d3d-4244-813d-c255879ebd20
+2018-11-24T22:50:33.282+0200 I COMMAND  [repl writer worker 15] CMD: drop book.temp
+2018-11-24T22:50:33.282+0200 I STORAGE  [repl writer worker 15] dropCollection: book.temp (22cfc64d-5d3d-4244-813d-c255879ebd20) - renaming to drop-pending collection: book.system.drop.1543092633i4t1.temp with drop optime { ts: Timestamp(1543092633, 4), t: 1 }
+2018-11-24T22:50:33.286+0200 I REPL     [replication-1] Completing collection drop for book.system.drop.1543092633i4t1.temp with drop optime { ts: Timestamp(1543092633, 4), t: 1 } (notification optime: { ts: Timestamp(1543092633, 4), t: 1 })
+2018-11-24T22:50:33.286+0200 I STORAGE  [replication-1] Finishing collection drop for book.system.drop.1543092633i4t1.temp (22cfc64d-5d3d-4244-813d-c255879ebd20).
+2018-11-24T22:50:33.286+0200 I REPL     [replication-0] Completing collection drop for book.system.drop.1543092633i4t1.temp with drop optime { ts: Timestamp(1543092633, 4), t: 1 } (notification optime: { ts: Timestamp(1543092633, 4), t: 1 })
+2018-11-24T22:50:46.211+0200 I STORAGE  [repl writer worker 1] createCollection: book.list with provided UUID: ce6095e3-d54a-4dcf-8e51-3c0c0ea3cf2e
+2018-11-24T22:52:20.632+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-24T22:52:20.634+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-24T22:52:20.635+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-24T22:53:26.745+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41556 #7 (5 connections now open)
+2018-11-24T22:53:26.745+0200 I NETWORK  [conn7] received client metadata from 127.0.0.1:41556 conn7: { driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:53:41.288+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41576 #8 (6 connections now open)
+2018-11-24T22:53:41.289+0200 I NETWORK  [conn8] received client metadata from 127.0.0.1:41576 conn8: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:53:41.357+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41578 #9 (7 connections now open)
+2018-11-24T22:53:41.357+0200 I NETWORK  [conn9] received client metadata from 127.0.0.1:41578 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-24T22:56:24.856+0200 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2018-11-24T22:56:24.856+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-24T22:56:24.856+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27019.sock
+2018-11-24T22:56:24.856+0200 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-11-24T22:56:24.856+0200 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-11-24T22:56:24.856+0200 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27017: CallbackCanceled: Reporter no longer valid
+2018-11-24T22:56:24.856+0200 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-11-24T22:56:24.856+0200 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-11-24T22:56:24.856+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host localhost:27017 due to bad connection status; 1 connections to that host remain open
+2018-11-24T22:56:24.856+0200 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2018-11-24T22:56:24.857+0200 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-11-24T22:56:24.863+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-24T22:56:24.867+0200 I STORAGE  [WTOplogJournalThread] oplog journal thread loop shutting down
+2018-11-24T22:56:24.867+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-24T22:56:24.985+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-24T22:56:24.985+0200 I CONTROL  [signalProcessingThread] now exiting
+2018-11-24T22:56:24.985+0200 I CONTROL  [signalProcessingThread] shutting down with code:0

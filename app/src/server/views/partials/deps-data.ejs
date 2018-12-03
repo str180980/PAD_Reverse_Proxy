@@ -1,0 +1,21 @@
+<div id="inputs-container">
+  <% deps.forEach(el => { %>
+  <div class="row" id="<%=el._id%>">
+    <div class="edited-fuel-input input-field col s12 m10">
+      <input id="fuels" placeholder="" type="text" class="validate" value="<%=el.name%>" required disabled>
+      <label for="name" class="active">Department</label>
+    </div>
+    <div class="input-field col s12 m1" id="fuel">
+      <a id="" href="#" class="edit-fuel-btn tooltipped" data-position="top" data-delay="50" data-tooltip="Edit dep">
+        <i class="material-icons orange-text">mode_edit</i>
+      </a>
+    </div>
+    <div class="input-field col s12 m1" id="fuel">
+      <a id="" href="#" class="delete-fuel-btn tooltipped" data-position="top" data-delay="50" data-tooltip="Delete dep">
+        <i class="material-icons red-text">delete</i>
+      </a>
+    </div>
+  </div>
+  <% }) %>
+
+</div>

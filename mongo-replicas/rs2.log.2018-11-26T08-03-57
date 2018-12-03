@@ -1,0 +1,400 @@
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] MongoDB starting : pid=20054 port=27018 dbpath=rs2 64-bit host=staverPC
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] db version v3.6.8
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] git version: 6bc9ed599c3fa164703346a22bad17e33fa913e4
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] modules: none
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] build environment:
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-25T19:51:58.013+0200 I CONTROL  [initandlisten] options: { net: { port: 27018 }, replication: { replSet: "padRepl" }, storage: { dbPath: "rs2" }, systemLog: { destination: "file", path: "rs2.log" } }
+2018-11-25T19:51:58.014+0200 I -        [initandlisten] Detected data files in rs2 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-11-25T19:51:58.014+0200 I STORAGE  [initandlisten] 
+2018-11-25T19:51:58.014+0200 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2018-11-25T19:51:58.014+0200 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2018-11-25T19:51:58.014+0200 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3376M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-11-25T19:51:58.982+0200 I STORAGE  [initandlisten] WiredTiger message [1543168318:982793][20054:0x7f02325149c0], txn-recover: Main recovery loop: starting at 2/1005312
+2018-11-25T19:51:59.312+0200 I STORAGE  [initandlisten] WiredTiger message [1543168319:312375][20054:0x7f02325149c0], txn-recover: Recovering log 2 through 3
+2018-11-25T19:51:59.408+0200 I STORAGE  [initandlisten] WiredTiger message [1543168319:408020][20054:0x7f02325149c0], txn-recover: Recovering log 3 through 3
+2018-11-25T19:51:59.497+0200 I STORAGE  [initandlisten] WiredTiger message [1543168319:497838][20054:0x7f02325149c0], txn-recover: Set global recovery timestamp: 0
+2018-11-25T19:51:59.549+0200 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2018-11-25T19:51:59.549+0200 I STORAGE  [initandlisten] The size storer reports that the oplog contains 1044 records totaling to 117598 bytes
+2018-11-25T19:51:59.549+0200 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] 
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] 
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-11-25T19:51:59.558+0200 I CONTROL  [initandlisten] 
+2018-11-25T19:51:59.585+0200 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'rs2/diagnostic.data'
+2018-11-25T19:51:59.586+0200 I REPL     [initandlisten] Rollback ID is 1
+2018-11-25T19:51:59.587+0200 I REPL     [initandlisten] No oplog entries to apply for recovery. appliedThrough and checkpointTimestamp are both null.
+2018-11-25T19:51:59.587+0200 I CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2018-11-25T19:51:59.587+0200 I NETWORK  [initandlisten] waiting for connections on port 27018
+2018-11-25T19:51:59.587+0200 I CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: Replication has not yet been configured
+2018-11-25T19:51:59.587+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41312 #1 (1 connection now open)
+2018-11-25T19:51:59.588+0200 I NETWORK  [conn1] received client metadata from 127.0.0.1:41312 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:51:59.588+0200 I REPL     [replexec-0] New replica set config in use: { _id: "padRepl", version: 2, protocolVersion: 1, members: [ { _id: 0, host: "localhost:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node1" }, slaveDelay: 0, votes: 1 }, { _id: 1, host: "localhost:27018", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node2" }, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27019", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: { location: "node3" }, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5bf9b7f7744e28041ce51a7e') } }
+2018-11-25T19:51:59.588+0200 I REPL     [replexec-0] This node is localhost:27018 in the config
+2018-11-25T19:51:59.588+0200 I REPL     [replexec-0] transition to STARTUP2 from STARTUP
+2018-11-25T19:51:59.588+0200 I REPL     [replexec-0] Starting replication storage threads
+2018-11-25T19:51:59.588+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27019
+2018-11-25T19:51:59.588+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27017
+2018-11-25T19:51:59.589+0200 I REPL     [replexec-0] transition to RECOVERING from STARTUP2
+2018-11-25T19:51:59.589+0200 I REPL     [replexec-0] Starting replication fetcher thread
+2018-11-25T19:51:59.589+0200 I REPL     [replexec-0] Starting replication applier thread
+2018-11-25T19:51:59.589+0200 I REPL     [replexec-0] Starting replication reporter thread
+2018-11-25T19:51:59.589+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27019, took 1ms (1 connections now open to localhost:27019)
+2018-11-25T19:51:59.589+0200 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27017, took 1ms (1 connections now open to localhost:27017)
+2018-11-25T19:51:59.589+0200 I REPL     [replexec-2] Member localhost:27019 is now in state SECONDARY
+2018-11-25T19:51:59.589+0200 I REPL     [replexec-1] Member localhost:27017 is now in state SECONDARY
+2018-11-25T19:51:59.589+0200 I REPL     [rsSync] transition to SECONDARY from RECOVERING
+2018-11-25T19:51:59.589+0200 I REPL     [rsSync] Resetting sync source to empty, which was :27017
+2018-11-25T19:51:59.689+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41322 #2 (2 connections now open)
+2018-11-25T19:51:59.689+0200 I NETWORK  [conn2] received client metadata from 127.0.0.1:41322 conn2: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:51:59.862+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41330 #3 (3 connections now open)
+2018-11-25T19:51:59.862+0200 I NETWORK  [conn3] received client metadata from 127.0.0.1:41330 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:52:00.039+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41332 #4 (4 connections now open)
+2018-11-25T19:52:00.040+0200 I NETWORK  [conn4] received client metadata from 127.0.0.1:41332 conn4: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:52:09.557+0200 I NETWORK  [conn3] end connection 127.0.0.1:41330 (3 connections now open)
+2018-11-25T19:52:09.558+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41344 #5 (4 connections now open)
+2018-11-25T19:52:09.558+0200 I NETWORK  [conn5] received client metadata from 127.0.0.1:41344 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:52:09.606+0200 I REPL     [replexec-2] Member localhost:27019 is now in state PRIMARY
+2018-11-25T19:52:12.592+0200 I REPL     [rsBackgroundSync] sync source candidate: localhost:27019
+2018-11-25T19:52:12.592+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-25T19:52:12.595+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 3ms (1 connections now open to localhost:27019)
+2018-11-25T19:52:12.598+0200 I REPL     [rsBackgroundSync] Changed sync source from empty to localhost:27019
+2018-11-25T19:52:12.599+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-25T19:52:12.601+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 2ms (2 connections now open to localhost:27019)
+2018-11-25T19:52:37.520+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41370 #6 (5 connections now open)
+2018-11-25T19:52:37.520+0200 I NETWORK  [conn6] received client metadata from 127.0.0.1:41370 conn6: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:52:41.578+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41382 #7 (6 connections now open)
+2018-11-25T19:52:56.579+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41394 #8 (7 connections now open)
+2018-11-25T19:53:08.984+0200 I NETWORK  [conn2] end connection 127.0.0.1:41322 (6 connections now open)
+2018-11-25T19:53:10.522+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41400 #9 (7 connections now open)
+2018-11-25T19:53:10.523+0200 I NETWORK  [conn9] received client metadata from 127.0.0.1:41400 conn9: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:53:22.367+0200 I NETWORK  [conn4] end connection 127.0.0.1:41332 (6 connections now open)
+2018-11-25T19:53:37.526+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41426 #10 (7 connections now open)
+2018-11-25T19:53:37.526+0200 I NETWORK  [conn10] received client metadata from 127.0.0.1:41426 conn10: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:53:38.710+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41432 #11 (8 connections now open)
+2018-11-25T19:53:38.733+0200 I NETWORK  [conn11] received client metadata from 127.0.0.1:41432 conn11: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:53:47.525+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41446 #12 (9 connections now open)
+2018-11-25T19:53:47.546+0200 I NETWORK  [conn12] received client metadata from 127.0.0.1:41446 conn12: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:53:58.958+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41454 #13 (10 connections now open)
+2018-11-25T19:53:58.982+0200 I NETWORK  [conn13] received client metadata from 127.0.0.1:41454 conn13: { driver: { name: "nodejs", version: "2.2.34" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.13.0-45-generic" }, platform: "Node.js v8.11.3, LE, mongodb-core: 2.1.18" }
+2018-11-25T19:54:10.526+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41468 #14 (11 connections now open)
+2018-11-25T19:54:10.527+0200 I NETWORK  [conn14] received client metadata from 127.0.0.1:41468 conn14: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T19:56:59.590+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27017 (1 connections now open to localhost:27017 with a 5 second timeout)
+2018-11-25T19:56:59.591+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41646 #15 (12 connections now open)
+2018-11-25T19:56:59.592+0200 I NETWORK  [conn15] received client metadata from 127.0.0.1:41646 conn15: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:56:59.593+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27018 (1 connections now open to localhost:27018 with a 5 second timeout)
+2018-11-25T19:56:59.593+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41650 #16 (13 connections now open)
+2018-11-25T19:56:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 5 second timeout)
+2018-11-25T19:56:59.597+0200 I NETWORK  [LogicalSessionCacheReap] Successfully connected to localhost:27019 (1 connections now open to localhost:27019 with a 0 second timeout)
+2018-11-25T19:56:59.598+0200 I NETWORK  [LogicalSessionCacheRefresh] Successfully connected to localhost:27019 (2 connections now open to localhost:27019 with a 0 second timeout)
+2018-11-25T19:56:59.599+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T19:56:59.600+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T19:56:59.601+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T19:56:59.604+0200 I NETWORK  [conn16] received client metadata from 127.0.0.1:41650 conn16: { driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:59:38.681+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41760 #17 (14 connections now open)
+2018-11-25T19:59:38.681+0200 I NETWORK  [conn17] received client metadata from 127.0.0.1:41760 conn17: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T19:59:38.772+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:41762 #18 (15 connections now open)
+2018-11-25T19:59:38.772+0200 I NETWORK  [conn18] received client metadata from 127.0.0.1:41762 conn18: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T20:01:59.587+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:01:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:01:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:06:59.587+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:06:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:06:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:06:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:11:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:11:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:13:43.187+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42330 #19 (16 connections now open)
+2018-11-25T20:13:43.187+0200 I NETWORK  [conn19] received client metadata from 127.0.0.1:42330 conn19: { driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T20:13:49.271+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42348 #20 (17 connections now open)
+2018-11-25T20:13:49.272+0200 I NETWORK  [conn20] received client metadata from 127.0.0.1:42348 conn20: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T20:13:49.344+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42350 #21 (18 connections now open)
+2018-11-25T20:13:49.345+0200 I NETWORK  [conn21] received client metadata from 127.0.0.1:42350 conn21: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T20:14:05.270+0200 I NETWORK  [conn20] end connection 127.0.0.1:42348 (17 connections now open)
+2018-11-25T20:14:05.272+0200 I NETWORK  [conn21] end connection 127.0.0.1:42350 (16 connections now open)
+2018-11-25T20:14:05.283+0200 I NETWORK  [conn17] end connection 127.0.0.1:41760 (15 connections now open)
+2018-11-25T20:14:05.285+0200 I NETWORK  [conn18] end connection 127.0.0.1:41762 (14 connections now open)
+2018-11-25T20:16:59.587+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:17:47.262+0200 I NETWORK  [conn6] end connection 127.0.0.1:41370 (13 connections now open)
+2018-11-25T20:17:47.265+0200 I NETWORK  [conn10] end connection 127.0.0.1:41426 (12 connections now open)
+2018-11-25T20:18:29.707+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42646 #22 (13 connections now open)
+2018-11-25T20:18:29.708+0200 I NETWORK  [conn22] received client metadata from 127.0.0.1:42646 conn22: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T20:18:29.785+0200 I NETWORK  [listener] connection accepted from 127.0.0.1:42648 #23 (14 connections now open)
+2018-11-25T20:18:29.785+0200 I NETWORK  [conn23] received client metadata from 127.0.0.1:42648 conn23: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-8-g05b19c6" }, os: { type: "Linux", name: "LinuxMint", architecture: "x86_64", version: "18.3" } }
+2018-11-25T20:19:30.154+0200 I NETWORK  [conn22] end connection 127.0.0.1:42646 (13 connections now open)
+2018-11-25T20:19:30.158+0200 I NETWORK  [conn23] end connection 127.0.0.1:42648 (12 connections now open)
+2018-11-25T20:19:37.817+0200 I NETWORK  [conn19] end connection 127.0.0.1:42330 (11 connections now open)
+2018-11-25T20:19:37.837+0200 I NETWORK  [conn14] end connection 127.0.0.1:41468 (10 connections now open)
+2018-11-25T20:19:37.838+0200 I NETWORK  [conn9] end connection 127.0.0.1:41400 (9 connections now open)
+2018-11-25T20:20:22.585+0200 I NETWORK  [conn8] end connection 127.0.0.1:41394 (8 connections now open)
+2018-11-25T20:20:22.585+0200 I NETWORK  [conn7] end connection 127.0.0.1:41382 (7 connections now open)
+2018-11-25T20:20:30.019+0200 I NETWORK  [conn11] end connection 127.0.0.1:41432 (6 connections now open)
+2018-11-25T20:20:30.024+0200 I NETWORK  [conn12] end connection 127.0.0.1:41446 (5 connections now open)
+2018-11-25T20:20:30.030+0200 I NETWORK  [conn13] end connection 127.0.0.1:41454 (4 connections now open)
+2018-11-25T20:21:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:21:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:21:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:21:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:26:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:26:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:26:59.596+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:26:59.598+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:31:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:31:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:31:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:32:31.457+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-25T20:32:31.459+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 2ms (3 connections now open to localhost:27019)
+2018-11-25T20:33:31.459+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27019 because the pool meets constraints; 2 connections to that host remain open
+2018-11-25T20:36:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:36:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:36:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:41:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:41:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:41:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:41:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:46:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:46:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:51:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:51:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:51:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:51:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:56:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:56:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T20:56:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:01:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:01:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:01:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:06:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:06:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:06:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:11:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:11:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:11:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:16:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:16:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:21:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:21:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:21:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:21:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:26:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:26:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:31:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:31:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:31:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:31:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:36:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:36:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:36:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:41:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:41:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:41:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:46:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:46:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:51:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:51:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:51:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:51:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:56:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T21:56:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:01:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:01:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:01:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:01:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:06:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:06:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:06:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:11:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:11:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:11:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:16:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:21:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:21:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:21:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:21:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:26:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:26:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:31:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:31:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:36:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:36:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:36:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:36:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:41:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:41:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:41:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:41:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:46:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:46:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:51:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:51:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:51:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:51:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:54:06.789+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-25T22:54:06.790+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 2ms (3 connections now open to localhost:27019)
+2018-11-25T22:55:06.790+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27019 because the pool meets constraints; 2 connections to that host remain open
+2018-11-25T22:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T22:56:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:00:31.802+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-25T23:00:31.804+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 2ms (3 connections now open to localhost:27019)
+2018-11-25T23:01:31.803+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27019 because the pool meets constraints; 2 connections to that host remain open
+2018-11-25T23:01:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:01:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:01:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:06:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:06:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:06:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:11:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:11:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:11:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:11:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:16:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:16:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:21:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:21:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:26:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:26:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:26:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:26:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:31:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:36:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:36:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:36:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:36:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:41:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:41:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:41:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:41:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:46:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:46:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:46:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:46:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:51:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:51:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:51:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:56:59.587+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:56:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:56:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-25T23:56:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:01:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:01:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:06:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:06:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:11:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:11:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:11:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:16:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:16:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:16:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:21:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:21:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:21:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:21:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:26:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:26:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:26:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:31:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:31:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:31:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:36:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:36:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:41:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:41:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:46:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:46:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:51:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:51:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:51:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:56:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:56:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:56:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T00:56:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:01:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:01:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:01:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:06:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:06:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:11:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:11:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:16:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:16:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:16:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:16:59.596+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:21:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:21:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:26:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:26:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:26:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:31:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:31:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:36:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:36:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:41:59.588+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:41:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:46:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:46:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:46:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:46:59.594+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:51:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:51:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:51:59.590+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:56:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:56:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:56:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T01:56:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:00:02.276+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-26T02:00:02.280+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 4ms (3 connections now open to localhost:27019)
+2018-11-26T02:01:02.278+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27019 because the pool meets constraints; 2 connections to that host remain open
+2018-11-26T02:01:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:01:59.589+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:01:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:06:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:06:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:11:42.311+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27019
+2018-11-26T02:11:42.315+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27019, took 5ms (3 connections now open to localhost:27019)
+2018-11-26T02:11:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:11:59.589+0200 I NETWORK  [LogicalSessionCacheReap] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:11:59.591+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:12:42.314+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending idle connection to host localhost:27019 because the pool meets constraints; 2 connections to that host remain open
+2018-11-26T02:16:59.588+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:16:59.592+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:16:59.593+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:16:59.595+0200 I NETWORK  [LogicalSessionCacheRefresh] Starting new replica set monitor for padRepl/localhost:27017,localhost:27018,localhost:27019
+2018-11-26T02:20:14.137+0200 I CONTROL  [signalProcessingThread] got signal 1 (Hangup), will terminate after current cmd ends
+2018-11-26T02:20:14.137+0200 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-11-26T02:20:14.137+0200 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27018.sock
+2018-11-26T02:20:14.160+0200 I REPL     [signalProcessingThread] shutting down replication subsystems
+2018-11-26T02:20:14.160+0200 I REPL     [signalProcessingThread] Stopping replication reporter thread
+2018-11-26T02:20:14.160+0200 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27019: CallbackCanceled: Reporter no longer valid
+2018-11-26T02:20:14.172+0200 I REPL     [signalProcessingThread] Stopping replication fetcher thread
+2018-11-26T02:20:14.172+0200 I REPL     [signalProcessingThread] Stopping replication applier thread
+2018-11-26T02:20:14.172+0200 I ASIO     [NetworkInterfaceASIO-RS-0] Ending connection to host localhost:27019 due to bad connection status; 1 connections to that host remain open
+2018-11-26T02:20:14.172+0200 I REPL     [rsBackgroundSync] Replication producer stopped after oplog fetcher finished returning a batch from our sync source.  Abandoning this batch of oplog entries and re-evaluating our sync source.
+2018-11-26T02:20:14.173+0200 I REPL     [signalProcessingThread] Stopping replication storage threads
+2018-11-26T02:20:14.176+0200 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-11-26T02:20:14.184+0200 I STORAGE  [WTOplogJournalThread] oplog journal thread loop shutting down
+2018-11-26T02:20:14.184+0200 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-11-26T02:20:14.316+0200 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-11-26T02:20:14.316+0200 I CONTROL  [signalProcessingThread] now exiting
+2018-11-26T02:20:14.316+0200 I CONTROL  [signalProcessingThread] shutting down with code:0
