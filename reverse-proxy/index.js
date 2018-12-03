@@ -1,3 +1,19 @@
+/****************
+ * This is the entry point of our Reverse-Proxy
+ * How it works:
+ * 1. Running a http server on port 80
+ * 2. Reading the config.js file and forwarding all the requests that matches the url to the addresses from proxy_to
+ * 3. lbCounter from config.js is used for Load Balancing, we use Round Robin algorithm, so we just iterate over proxy_to array and
+ * are forwarding successively requests to each of the server instances (besides, adresses from proxy_to reprsents the same app wich is running
+ * on three different port, so we have three nodes of the app)
+ * 5. For caching we use Redis, we are caching only GET requests, so when we process an incoming request if it's for ex. GET /students 
+ * we check if we haven a key-value pair in Redis(key is the url, value is the resources from this url(in our case html)), if not we forward
+ * the request to our app server, when we get back the response we save the resource in Redis so we can return the following requests on this url
+ * from redis. We invalidate the cache on POST/PUT/DELETE, for ex. if we have a POST /students we remove from the Redis the record wich we inserted
+ * on GET /students 
+ *  ***********/
+
+
 const express = require("express");
 const config = require("./config");
 const fetch = require("node-fetch");
